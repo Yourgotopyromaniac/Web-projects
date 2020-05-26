@@ -1,0 +1,271 @@
+body
+{
+	margin: 0;
+	background: black;
+	font-family: 
+	 "Avant Garde", 
+	 "Century Gothic", 
+	 CenturyGothic, 
+	 "AppleGothic",
+	sans-serif;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	display: flex;
+
+}
+
+a
+{
+	position: relative;
+	display: inline-block;
+	padding: 15px 30px;
+	color: #fff;
+	text-decoration:none;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-size: 24px;
+	overflow: hidden;
+	transition: 0.2s;
+}
+
+a:hover 
+{
+	color: #255784;
+	background: #00ffdb;
+	box-shadow: 0 0 10px #00ffdb , 0 0 20px #00ffdb, 0 0 30px #00ffdb ,0 0 40px #00ffdb; 
+	transition-delay: 1s;
+	overflow: unset;
+}
+
+a span
+{
+	position: absolute;
+	display: block;
+}
+
+a span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent,#00ffdb);
+}
+
+a:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 1s;
+}
+
+a span:nth-child(3)
+{
+	bottom: 0;
+	right : -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent,#00ffdb);
+}
+
+a:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+
+a span:nth-child(2)
+{
+	right: 0;
+	top: -100%;
+	height: 100%;
+	width: 2px;
+	background: linear-gradient(180deg, transparent,#00ffdb);
+}
+
+a:hover span:nth-child(2)
+{
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+a span:nth-child(4)
+{
+	left: 0;
+	bottom: -100%;
+	height: 100%;
+	width: 2px;
+	background: linear-gradient(360deg, transparent,#00ffdb);
+}
+
+a:hover span:nth-child(4)
+{
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+
+.banner
+{
+	position: relative;
+	width: 100%;
+	height:100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.25;
+	z-index: -1;
+}
+.banner .work
+{
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+
+.work .header
+{
+	color: #fff;
+	background: inherit;
+	position: relative;
+}
+
+.work .text
+{
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+	font-size: 15px;
+	color: #9b9b9b;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+	
+}
+
+@media(max-width: 1024px)
+{
+
+	.banner 
+	{
+		position: relative;
+		height:100vh;
+		
+	}
+	.banner img
+	{
+		position: absolute;
+		height: 100vh;
+	    object-fit: cover;
+	}
+	.work
+	{
+		padding: 0px;
+		align-items: center;
+
+	}
+	.work .header
+	{
+		font-size: 25px;
+	}
+
+	.work .text
+	{
+		padding: 50px;
+	}
+
+	.work a
+	{
+		font-size: 12px;
+		margin-top: 10px; 
+	}
+	.work a:hover
+	{
+		color: #255784;
+	    background: #00ffdb;
+	    box-shadow: 0 0 10px #00ffdb , 0 0 20px #00ffdb, 0 0 30px #00ffdb ,0 0 40px #00ffdb; 
+	    transition-delay: 0s;
+	    overflow: hidden;
+
+	}
+	a span
+    {
+	   position: absolute;
+	   display: block;
+    }
+
+	a span:nth-child(1)
+	{
+	    top: 0;
+		left: 0%;
+		width: 100%;
+		height: 2px;
+		background: #00ffdb;
+	}
+
+	a:hover span:nth-child(1)
+	{
+		left: 0;
+		transition: 1s;
+	}
+
+	a span:nth-child(3)
+	{
+		bottom: 0;
+		right : 0%;
+		width: 100%;
+		height: 2px;
+		background: #00ffdb;
+	}
+
+	a:hover span:nth-child(3)
+	{
+		right: 0;
+		transition: 1s;
+		transition-delay: 0.5s;
+	}
+
+	a span:nth-child(2)
+	{
+	right: 0;
+	top: 0%;
+	height: 100%;
+	width: 2px;
+	background: #00ffdb;
+	}
+
+	a:hover span:nth-child(2)
+	{
+		top: 0%;
+		transition: 1s;
+		transition-delay: 0.25s;
+	}
+
+	a span:nth-child(4)
+	{
+		left: 0;
+		bottom: 0%;
+		height: 100%;
+		width: 2px;
+		background: #00ffdb;
+	}
+
+	a:hover span:nth-child(4)
+	{
+		bottom: 0%;
+		transition: 1s;
+		transition-delay: 0.75s;
+	}
+
+    
+}
