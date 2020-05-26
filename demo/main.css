@@ -1,0 +1,515 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+    font-family: 
+	 "Avant Garde", 
+	 "Century Gothic", 
+	 CenturyGothic, 
+	 "AppleGothic",
+	sans-serif;
+}
+
+.banner
+{
+	position: relative;
+	width: 100%;
+	height:100vh;
+	background: #3475ca;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.banner img
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.25;
+}
+
+.banner .content
+{
+	position: relative;
+	max-width: 750px;
+	text-align: center;
+}
+
+.banner .content h2
+{
+	color: #fff;
+	font-size: 60px;
+}
+
+.banner .content p
+{
+	color: #fff;
+	font-size: 15px;
+}
+
+.banner header
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 40px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 10000;
+}
+
+.banner header .logo
+{
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 24px;
+}
+.banner header .toggle
+{
+	position: relative;
+	height: 28px;
+	width: 36px;
+	background: url(toggle.png);
+	background-size: cover;
+	cursor: pointer;
+}
+
+.about
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+}
+
+.about .contentBx
+{
+	background: #162c3b;
+	padding: 100px;
+	width: 50%;
+}
+
+.heading
+{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+.text
+{
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+.about .imgBx
+{
+	background: url(window.jpg);
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+}
+
+.services
+{
+	background: rgb(45,45,45);
+	padding: 100px;
+	text-align: center;
+}
+
+.services .container
+{ 
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+.services .container .serviceBx
+{
+	position: relative;
+	background: #fff;
+	width: 250px;	
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+.services .container .serviceBx img
+{
+	max-width: 100px;
+}
+
+.services .container .serviceBx h2
+{
+	font-weight: 500;
+	font-size: 20px
+	letter-spacing: 1px;
+}
+
+.technology
+{
+	background: #3f8ffc;
+	padding: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 280px;
+	margin-top: -250px;
+}
+
+.technology .contentBx
+{
+	max-width: 800px;
+}
+
+.technology .imgBx
+{
+	max-width: 250px;
+}
+
+.technology .imgBx img
+{
+	max-width: 100%;
+}
+
+.client
+{
+	background: #162c3b;
+	padding: 100px;
+	text-align: center;
+}
+
+.client .imgBx
+{
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	display: flex;
+	margin-top: 80px;
+
+}
+
+.client .imgBx img
+{
+	opacity: 0.25;
+	margin: 20px;
+	max-width: 150px;
+}
+
+.client .imgBx img:hover
+{
+	cursor: pointer;
+	opacity: 1;
+}
+
+.reviews
+{	
+	position: relative;
+	background: #800;
+	padding: 100px;
+	align-items: center;
+	padding-top: 50px;
+	text-align: center;
+	color: #fff;
+}
+
+.reviews .container
+{
+	margin-top: 40px;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: space-around; 
+}
+
+.reviews .container .contentBx
+{
+	width: 500px; 
+	height: 300px;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 60px 50px;
+	justify-content: center;
+	background: #fff;
+	color: black;
+	align-items: center;
+	text-align: left;
+}
+
+.reviews .container .contentBx p
+{	
+	font-style: italic;
+}
+
+.reviews .container .contentBx h3
+{
+	text-align: end;
+	color: #021428;
+}
+.reviews h2
+{
+	font-size: 30px;
+}
+
+.contact
+{
+	background: #162c3b;
+	text-align: center;
+	padding: 100px;
+}
+
+.redbg
+{
+	background: url(red.jpg) !important;
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+
+}
+
+ .imgBx2
+{
+	background: url(bg2.jpg);
+	width: 50%;
+	background-size: cover;
+	background-position: center;
+
+}
+
+.form
+{
+	padding: 50px;
+}
+
+.form .inputBx
+{
+	margin-bottom: 40px;
+
+}
+
+.form .inputBx input
+{
+	width: 100%;
+	background:transparent;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	padding: 10px 0px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	border-bottom: 2px solid;
+	border-color: #fff;
+}
+
+.form .inputBx input::placeholder
+{
+	color: #fff;
+}
+
+.form .inputBx textarea
+{
+	width: 100%;
+	background:transparent;
+	box-shadow: none;
+	outline: none;
+	border:none;
+	padding: 10px 0px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #fff;
+	border-bottom: 2px solid;
+	min-height: 150px;
+	border-color: #fff;
+}
+
+.form .inputBx textarea::placeholder
+{
+	color: #fff;
+}
+
+.form .inputBx input[type="submit"]
+{
+	width: 150px;
+	background: #fff;
+	cursor: pointer;
+	font-weight: 400;
+	color: #111;
+}
+
+.footer
+{
+	background: #202224;
+	width: 100%;
+	display: flex;
+	padding: 20px;
+	padding-left: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer .contentBx .heading
+{
+	font-size: 18px;
+}
+
+.footer .imgBx3
+{
+	max-width: 250px;
+	padding-right: 100px;
+	display: flex;
+}
+
+.footer .imgBx3 img
+{
+	margin-right: 50px;
+	cursor: pointer;
+}
+
+@media (max-width: 991px)
+{
+	.banner
+	{
+		padding: 50px;
+	}
+
+
+	.banner header
+	{
+		padding: 20px 50px;
+
+	}
+
+	.banner .content h2 
+	{
+		font-size: 36px;
+	}
+
+	.banner .content p 
+	{			
+   	    font-size: 15px;
+   	}
+
+   	.about
+   	{
+   		flex-direction: column;
+
+   	}
+   	.about .contentBx,
+   	.about .imgBx
+   	{
+   		width: 100%;
+   		padding: 50px;
+   		min-height: 400px;
+   		text-align: center;
+   	}
+
+
+    .services 
+    {
+    	padding: 50px;
+    }
+
+    .services .container
+    {
+    	justify-content: center;
+    	margin-top: 20px;
+    }
+
+    .services .container .serviceBx
+    {
+    	margin: 20px;
+    	width: 300px;
+    	height: 350px;
+    }
+
+    .technology
+    {
+    	flex-direction: column;
+    	justify-content: center;
+    	
+    }
+
+    .technology .imgBx 
+    {
+    	margin-top: 30px;
+    	max-width: 250px;
+    }
+
+    .client
+    {
+    	padding: 50px;
+    }
+
+    .client .imgBx
+    {
+    	justify-content: center;
+    }
+
+    .reviews
+    {
+    	padding: 50px;
+    }
+
+   
+
+    .reviews .container .contentBx
+   {
+		margin-top: 30px;
+		padding: 0px 20px;
+		max-width: 550px;
+		margin-bottom: 40px;
+   }
+
+   .contact 
+   { 
+   		padding: 50px;
+   		font-size: 15px;
+   		justify-content: center;
+   }
+
+   .about .redbg
+   {
+   	    width: 100%;
+   		padding: 50px;
+   		min-height: 400px;
+   		text-align: center;
+
+   }
+
+   .footer .contentBx .heading
+   {
+   	margin-right: 40px;
+   	margin-left: 0px;
+   }
+
+   .footer .imgBx3
+   {
+   	justify-content: center;
+   }
+   .footer .imgBx3 img 
+   {
+   	height: 25px;
+   	width:25px;
+   	margin-right: 50px;
+   }
+
+
+}
