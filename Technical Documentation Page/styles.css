@@ -1,0 +1,306 @@
+html, body
+{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+  min-width: 290px;
+  background-color: rgb(61,61,61);
+  color: white;
+}
+
+.selector
+{
+  color: rgb(255, 229, 112);
+}
+
+.property
+{
+  color: rgb(52, 157, 199);
+}
+.value
+{
+  color: rgb(165, 71, 42);
+}
+#navbar {
+  position: fixed;
+  min-width: 300px;
+  background: rgb(61, 61, 61);
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 70%;
+  border:none;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #303030; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(131, 170, 241); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(160, 182, 255); 
+  transition: all 0.4s ease-in-out;
+}
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 80px;
+  margin-bottom: 110px;
+}
+
+#navbar ul
+{
+  height: 100%;
+  list-style: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-inline-start: 0;
+}
+
+#navbar ul li
+{
+  padding: 0;
+  position: relative;
+}
+#navbar ul li a
+{
+  display: block;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 1.5em;
+
+}
+#navbar ul li a:hover
+{
+  background-color: rgba(129, 155, 204,0.6);
+  border-left: 5px solid rgb(104, 157, 255);
+  color: white;
+  transition: all 0.4s ease-in-out;
+}
+
+.change
+{
+  background-color: rgba(129, 155, 204,0.6);
+  border-left: 5px solid rgb(104, 157, 255);
+  color: white;
+}
+
+#main-doc
+{
+  font-size: 15px;
+}
+
+p
+{
+  font-weight: 500;
+}
+
+pre
+{
+  border-left: 3px solid rgb(109, 109, 109);
+  background-color: rgb(51, 51, 51);
+}
+
+code
+{
+  position: relative;
+  left: -100px;
+}
+
+h2
+{
+  color: rgb(104, 146, 223);
+}
+h1
+{
+  padding: 1em;
+  width: 80%;
+  color: rgb(104, 146, 223);
+}
+
+section
+{
+  margin-bottom: 120px;
+}
+
+#top-nav
+{
+  display: flex;
+  background: rgba(61,61,61,0.8);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+#top-nav img
+{
+  height: 50px;
+  width: 50px;
+}
+
+#box-model
+{
+  max-width: 100%;
+  height: auto;
+}
+form
+{
+  display: flex;
+  justify-content: center;
+}
+
+div#search
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 26px;
+  margin-bottom: 29px;
+  border-radius: 500px;
+  border: solid 1px rgb(190, 190, 190);
+  background: rgb(51, 51, 51);
+  padding: 1rem;
+  width: 280px;
+  height: 12px;
+  min-width: 40%;
+}
+
+div#search input
+{ 
+  height: 20px;
+  background: rgb(51, 51, 51);
+  color: white;
+  outline: none;
+  font-size: 15px;
+  text-decoration: none;
+  width: 95%;
+  margin-right: 10px;
+  border: none;
+}
+
+div#search i 
+{
+  margin-right: 10px;
+  color: white;
+}
+
+#back-to-top
+{
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  text-decoration: none;
+  background: rgb(61, 61, 61);
+  border-radius: 50%;
+  z-index: 3;
+  height: 45px;
+  width: 45px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+}
+
+#back-to-top i
+{
+  color: white;
+  padding: 1.0em;
+}
+
+#back-to-top span
+{
+  color: rgba(0,0,0,0);
+  border: none;
+  text-decoration: none;
+}
+
+#back-to-top span:hover
+{
+  color: white;
+  transition: all 0.4s ease-in-out ;
+}
+
+#back-to-top:hover
+{
+  width: 150px;
+  border-radius: 20px;
+  transition: all 0.4s ease-in-out ;
+}
+
+#What_Next ol li
+{
+  padding: 0.3em;
+}
+
+#What_Next ol li a
+{
+  color: white;
+}
+
+
+
+@media only screen and (max-width: 815px) {
+
+  #navbar ul
+  {
+    height: 110px;
+    border-top: 5px solid rgb(71,71,71);
+  }
+
+  #navbar
+  {
+    background-color: rgb(61,61,61);
+    position: fixed;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 240px;
+    border-bottom: 5px solid rgb(71,71,71);
+    z-index: 1;
+  }
+
+  #navbar header
+  {
+    width: 75%;
+    height: 80px;
+  }
+
+  #main-doc
+  {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 240px;
+    padding: 20px;
+  }
+
+  code
+  {
+    position: relative;
+    left: -100px;
+  }
+
+  #back-to-top span
+  {
+    color: rgba(0,0,0,0);
+    display: none;
+  }
+
+  #back-to-top:hover
+  {
+    width: 45px;
+    border-radius: 50%;
+  }
+
+  section 
+  {
+    margin-bottom: 50px;
+  }
+}
+
+
+
