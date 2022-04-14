@@ -258,7 +258,7 @@ div#search i
     top: 0;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width : 100vw;
     max-height: 240px;
     border-bottom: 5px solid rgb(71,71,71);
     z-index: 1;
@@ -281,9 +281,12 @@ div#search i
   code
   {
     position: relative;
-    left: -130px;
+    left: -140px;
   }
-
+  #back-to-top
+  {
+    right : 10%;
+  } 
   #back-to-top span
   {
     color: rgba(0,0,0,0);
