@@ -299,7 +299,11 @@ div#search i
   {
     margin-bottom: 50px;
   }
-}
+
+  #navbar ul li a:hover
+  {
+    background-color: background-color: rgba(129, 155, 204,0.9) 
+  }
 
 
 
