@@ -1,484 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/2c69f58432.js" crossorigin="anonymous"></script>
-    <title>TDP</title>
-</head>
-<body>
-    <nav id="navbar">
-        <header><h1>CSS: Cascading Style Sheets</h1></header>
-        <ul>
-            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
-            <li><a class="nav-link" href="#Prerequisites">Prerequisites</a></li>
-            <li><a class="nav-link" href="#What_is_CSS">What is CSS</a></li>
-            <li><a class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
-            <li><a class="nav-link" href="#Selectors">Selectors</a></li>
-            <li><a class="nav-link" href="#Properties_and_Values">Properties and Values</a></li>
-            <li><a class="nav-link" href="#Cascading_and_Inheritance">Cascading and Inheritance</a></li>
-            <li><a class="nav-link" href="#CSS_Specificity">CSS Specificity</a></li>
-            <li><a class="nav-link" href="#The_Box_Model">The Box Model</a></li>
-            <li><a class="nav-link" href="#What_Next">What Next</a></li>
-            <li><a class="nav-link" href="#References">References</a></li>
+
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://kit.fontawesome.com/2c69f58432.js" crossorigin="anonymous"></script>
+      <title>TDP</title>
+    </head>
+    
+    <body id="body-id">
+      <p id = "faux-top"></p>
+      <nav id="navbar" class="nav-class-dark">
+        <header>
+          <h1>CSS: Cascading Style Sheets</h1>
+        </header>
+        <ul id="list-uo">
+          <li><a id="link1" class="nav-link" href="#Introduction">Introduction</a></li>
+          <li><a id="link2" class="nav-link" href="#Prerequisites">Prerequisites</a></li>
+          <li><a id="link3" class="nav-link" href="#What_is_CSS">What is CSS</a></li>
+          <li><a id="link4"class="nav-link" href="#CSS_Syntax">CSS Syntax</a></li>
+          <li><a id="link5" class="nav-link" href="#Selectors">Selectors</a></li>
+          <li><a id="link6" class="nav-link" href="#Properties_and_Values">Properties and Values</a></li>
+          <li><a id="link7" class="nav-link" href="#Cascading_and_Inheritance">Cascading and Inheritance</a></li>
+          <li><a id="link8" class="nav-link" href="#CSS_Specificity">CSS Specificity</a></li>
+          <li><a id="link9" class="nav-link" href="#The_Box_Model">The Box Model</a></li>
+          <li><a id="link10" class="nav-link" href="#What_Next">What Next</a></li>
+          <li><a id="link11" class="nav-link" href="#References">References</a></li>
         </ul>
-    </nav>
-    <a id="back-to-top" href="#top-nav">
+      </nav>
+      <a id="back-to-top" href="#faux-top">
         <i class="fa-solid fa-arrow-up"></i>
         <span>Back to top</span>
-    </a>
-<main id="main-doc">
+      </a>
+      <main id="main-doc">
         <nav id="top-nav">
-            <form>
-                <div id="search">
-                    <i class="fas fa-search"></i>
-                    <input type="text">
-                </div>
-            </form>
-	    <div id="theme">
-       <i class="fa-solid fa-sun"></i>
-       <label class="switch">
-
-        <input onclick= "darkMode()" type="checkbox" checked>
-
-        <span class="slider round"></span>
-
-      </label>
-       <i class="fa-solid fa-moon"></i>
-       </div>
+          <form>
+            <div id="search">
+              <i id="search-icon" class="fas fa-search"></i>
+              <input id="input-box" type="text" placeholder="search...">
+            </div>
+          </form>
+        
+         <div id="theme">
+           <i class="fa-solid fa-sun"></i>
+           <label class="switch">
+    
+            <input onclick= "darkMode()" type="checkbox" checked>
+    
+            <span class="slider round"></span>
+    
+          </label>
+           <i class="fa-solid fa-moon"></i>
+           </div>
         </nav>
         <section id="Introduction" class="main-section">
-            <header class="section-header"><h2>Introduction</h2></header>
-            <p>
-                Cascading Stylesheets — or CSS — is the first technology you should start learning after HTML. 
-                While HTML is used to define the structure and semantics of your content, CSS is used to style it
-                and lay it out.
-                For example, you can use CSS to alter the font, color, size, and spacing of your content, 
-                split it into multiple columns, or add animations and other decorative features.
-            </p>
+          <header class="section-header"><h2>Introduction</h2></header>
+          <p>
+              Cascading Stylesheets — or CSS — is the first technology you should start learning after HTML. 
+              While HTML is used to define the structure and semantics of your content, CSS is used to style it
+              and lay it out.
+              For example, you can use CSS to alter the font, color, size, and spacing of your content, 
+              split it into multiple columns, or add animations and other decorative features.
+          </p>
+      </section>
+
+      <section id="Prerequisites" class="main-section">
+          <header class="section-header"><h2>Prerequisites</h2></header>
+          <p>
+          You should learn the basics of HTML before attempting any CSS.
+          Once you understand the fundamentals of HTML, we recommend that you learn further HTML and CSS at the
+          same time, moving back and forth between the two topics. This is because HTML is far more interesting
+          and much more fun to learn when you apply CSS, and you can't learn CSS without knowing HTML.
+          Before starting this topic, you should also be familiar with using computers and using the web passively
+          (i.e., just looking at it, consuming the content).
+          You should have a basic work environment set up, and understand how to create and manage files.
+          To Summarize, the prerequisites for this documentation include the following;
+          </p>
+          <ol>
+              <li>Good working knowledge of HTML</li>
+              <li>Basic familiarity with using computers, and using the Web passively</li>
+              <li>A basic work environment set up, and an understanding of how to create and manage files.</li>
+          </ol>
+      </section>
+
+      <section id="What_is_CSS" class="main-section">
+          <header class="section-header"><h2>What is CSS</h2></header>
+
+          <p>
+              Like HTML, CSS is not a programming language. It's not a markup language either.
+              CSS is a style sheet language. CSS is what you use to selectively style HTML elements.
+              For example, this CSS selects paragraph text, setting the color to red:
+          </p>
+
+          <pre>
+              <code>
+                  <span class="selector">p</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+
+          <p>
+              Let's try it out! Using a text editor, paste the four lines of CSS (above) into a new file.
+              Save the file as style.css in a directory named styles.To make the code work, we still need
+               to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the
+              appearance of the HTML
+          </p>
+
+          <p>
+              Using CSS you can control exactly how HTML elements look in the browser, 
+              presenting your markup using whatever design you like.
+          </p>
+      </section>
+
+      <section id="CSS_Syntax" class="main-section">
+          <header class="section-header"><h2>CSS Syntax</h2></header>
+
+          <p>
+              CSS is a rule-based language — you define rules specifying groups of styles that should be
+              applied to particular elements or groups of elements on your web page. For example
+               "I want the main heading on my page to be shown as large red text."
+              The following code shows a very simple CSS rule that would achieve the styling described above:
+          </p>
+
+          <pre>
+              <code>
+                  <span class="selector">h1</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >red</span>;
+                      <span class="property">font-size</span>: <span class="value" >5em</span>;
+                  }
+              </code>
+          </pre>
+
+          <p>   
+              The rule opens with a selector . This selects the HTML element that we are going to style.
+              In this case we are styling level one headings.
+              We then have a set of curly braces { }. Inside those will be one or more declarations,
+              which take the form of property and value pairs.
+              Each pair specifies a property of the element(s) we are selecting, then a value that we'd like
+              to give the property. Before the colon, we have the property, and after the colon, the value. 
+              CSS properties have different allowable values, depending on which property is being specified.
+              In our example, we have the color property, which can take various color values. 
+              We also have the font-size property. This property can take various size units as a value.
+          </p>
+          
+      </section>
+
+      <section id="Selectors" class="main-section">
+          <header class="section-header"><h2>Selectors</h2></header>
+          <p>
+              A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that
+              tell the browser which HTML elements should be selected to have the CSS property values inside 
+              the rule applied to them.
+              The element or elements which are selected by the selector are referred to as the subject of the selector
+          </p>
+
+          <p>
+              If you have more than one thing which uses the same CSS then the individual selectors can be combined
+              into a selector list so that the rule is applied to all of the individual selectors.
+              For example, if I have the same CSS for an h1 and also a class of .special,
+              I could write this as two separate rules.
+
+          <pre>
+              <code>
+                  <span class="selector">h1</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              
+                  <span class="selector">.special</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+
+          I could also combine these into a selector list, by adding a comma between them.
+
+          <pre>
+              <code>
+                  <span class="selector">h1, .special</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+
+          White space is valid before or after the comma. You may also find the selectors more readable
+          if each is on a new line.
+
+          <pre>
+              <code>
+                  <span class="selector">h1,
+                  .special</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+
+          </p>
+      </section>
+
+      <section id="Properties_and_Values" class="main-section">
+          <header class="section-header"><h2>Properties and Values</h2></header>
+
+          <p>
+              At its most basic level, CSS consists of two components:
+              <ul>
+                  <li> <strong>Properties: </strong>These are human-readable identifiers
+                      that indicate which stylistic features you want to modify.
+                      For example, font-size, width, background-color.
+                  </li>
+                  <li>
+                      <strong>Values: </strong> Each property is assigned a value.
+                      This value indicates how to style the property.
+                  </li>
+              </ul>
+          </p>
+          <p>
+              The example below highlights a single property and value.
+              The property name is color and the value is blue
+          </p>
+
+          <pre>
+              <code>
+                  <span class="selector">h1</span> 
+                  {
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+
+          <p>
+              When a property is paired with a value, this pairing is called a CSS declaration.
+              CSS declarations are found within CSS Declaration Blocks.
+              In the example below, highlighting identifies the CSS declaration block.
+          </p>
+
+          <pre>
+              <code>
+                      <span class="property">color </span>: <span class="value" >blue</span>;
+                      <span class="property">background-color </span>: <span class="value" >yellow</span>;
+              </code>
+          </pre>
+
+          <p>
+              Finally, CSS declaration blocks are paired with selectors to produce CSS rulesets (or CSS rules).
+              The example below contains two rules: one for the h1 selector and one for the p selector.
+              The colored highlighting identifies the h1 rule.
+          </p>
+
+          <pre>
+              <code>
+                  <span class="selector">h1</span> 
+                  {
+                     <span class="property">color </span>: <span class="value" >blue</span>;
+                     <span class="property">background-color </span>: <span class="value" >yellow</span>;
+                  }
+              </code>
+          </pre>
+
+          <p>
+              Setting CSS properties to specific values is the primary way of defining layout and styling for
+              a document.
+              The CSS engine calculates which declarations apply to every single element of a page.
+              CSS properties and values are case-insensitive. The property and value in a property-value pair
+              are separated by a colon (:).
+          </p>
+      </section>
+
+      <section id="Cascading_and_Inheritance" class="main-section">
+          <header class="section-header"><h2>Cascading and Inheritance</h2></header>
+
+          <p>
+              CSS stands for Cascading Style Sheets, and that first word cascading is incredibly important
+              to understand — the way that the cascade behaves is key to understanding CSS.
+              At some point, you will be working on a project and you will find that the CSS you thought
+              should be applied to an element is not working.
+              Usually, the problem is that you have created two rules which could potentially apply to the
+              same element.
+              The cascade, and the closely-related concept of specificity,
+              are mechanisms that control which rule applies when there is such a conflict.
+              Which rule is styling your element may not be the one you expect, so you need to understand
+              how these mechanisms work.
+          </p>
+
+          <p>
+              Also significant here is the concept of inheritance, which means that some CSS properties by
+              default inherit values
+              set on the current element's parent element, and some don't.
+              This can also cause some behavior that you might not expect.
+              Let's start by taking a quick look at the key things we are dealing with,
+              then we'll look at each in turn and see how they interact with each other and your CSS.
+              This can seem like a set of tricky concepts to understand.
+              As you get more practice writing CSS, the way it works will become more obvious to you.
+          </p>
+
+          <h3>The Cascade</h3>
+          <p>
+              Stylesheets cascade — at a very simple level, this means that the order of CSS rules matters;
+              when two rules apply that have equal specificity, the one that comes last in the CSS is the
+              one that will be used.
+              In the below example, we have two rules that could apply to the h1 element.
+              The h1 ends up being colored blue. This is because both the rules have an identical element selector,
+              and therefore, carry the same specificity, but the last one in the source order wins.
+          </p>
+          <pre>
+              <code>
+                  <span class="selector">h1</span> 
+                  {
+                     <span class="property">color </span>: <span class="value" >red</span>;
+                  }
+                  <span class="selector">h1</span> 
+                  {
+                     <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+          <h3>Inheritance</h3>
+          <p>
+              Inheritance also needs to be understood in this context — some CSS property values set on
+              parent elements are inherited by their child elements, and some aren't. For example, if you
+              set a color and font-family on an element, every element inside it will also be styled with 
+              that color and font, unless you've applied different color and font values directly to them.
+          </p>
+
+          <p>
+              Some properties do not inherit — for example, if you set a width of 50% on an element,
+              all of its descendants do not get a width of 50% of their parent's width.
+              If this was the case, CSS would be very frustrating to use!
+          </p>
+      </section>
+
+      <section id="CSS_Specificity" class="main-section">
+          <header class="section-header"><h2>CSS Specificity</h2></header>
+
+          <p>
+              Specificity is how the browser decides which rule applies if multiple rules have different selectors,
+              but could still apply to the same element. It is basically a measure of how specific a selector's
+              selection will be:
+          </p>
+          <ul>
+              <li>
+                  An element selector is less specific — it will select all elements of that type that appear on a
+                   page — so will get a lower score.
+              </li>
+              <li>A class selector is more specific — it will select only the elements on a page that have a specific
+                  class attribute value — so will get a higher score
+              </li>
+          </ul>
+
+          <p>
+              Example time! Below, we again have two rules that could apply to the h1.
+              The h1 ends up being colored red — the class selector main-heading gives its rule a higher
+              specificity, and so it will be applied even though the rule with the h1 element selector
+              appears further down in the source order.
+          </p>
+
+          <pre>
+              <code>
+                  <span class="selector">.main-heading</span> 
+                  {
+                     <span class="property">color </span>: <span class="value" >red</span>;
+                  }
+                  <span class="selector">h1</span> 
+                  {
+                     <span class="property">color </span>: <span class="value" >blue</span>;
+                  }
+              </code>
+          </pre>
+          
+      </section>
+
+      <section id="The_Box_Model" class="main-section">
+          <header class="section-header"><h2>The Box Model</h2></header>
+          <p>
+              Everything in CSS has a box around it, and understanding these boxes is key to being 
+              able to create layouts with CSS, or to align items with other items. In this lesson, we will 
+              take a proper look at the CSS Box Model so that you can build more complex layout tasks with
+              an understanding of how it works and the terminology that relates to it.
+          </p>
+
+          <p>
+              In CSS we broadly have two types of boxes — block boxes and inline boxes.
+              These characteristics refer to how the box behaves in terms of page flow and in relation
+              to other boxes on the page.
+              Boxes also have an inner display type and an outer display type.
+              If a box has an outer display type of block, it will behave in the following ways:
+
+          <ul>
+              <li>The box will break onto a new line.</li>
+              <li>box will extend in the inline direction to fill the space available in its container.
+                  In most cases this means that the box will become as wide as its container, filling up 100% of the space available.
+              </li>
+              <li>The width and height properties are respected.</li>
+              <li>Padding, margin and border will cause other elements to be pushed away from the box</li>
+          </ul>
+          
+          <p>Some HTML elements, such as h1 and p, use block as their outer display type by default.</p>
+          
+          <p>If a box has an outer display type of inline, then:</p>
+
+          <ul>
+              <li>The box will not break onto a new line.</li>
+              <li>Horizontal padding, margins, and borders will apply and will cause 
+                  other inline boxes to move away from the box.</li>
+              <li>The width and height properties will not apply.</li>
+              <li>Vertical padding, margins, and borders will apply but will not cause other
+               inline boxes to move away from the box.</li>
+          </ul>
+
+          <h3>What is the CSS box model?</h3>
+          <p>          
+              The CSS box model as a whole applies to block boxes.
+              Inline boxes use just some of the behavior defined in the box model. 
+              The model defines how the different parts of a box — margin, border, padding, and content
+              — work together to create a box that you can see on a page. To add some additional complexity,
+              there is a standard and an alternate box model.
+          </p>
+          <h3>Parts of a box</h3>
+          
+          <p>Making up a block box in CSS we have the:</p>
+
+          <ul>
+              <li><strong>Content box:</strong> The area where your content is displayed,
+                   which can be sized using properties like width and height.
+              </li>
+              <br>
+              <li><strong>Padding box:</strong> The padding sits around the content as white space;
+                   its size can be controlled using padding and related properties.
+              </li>
+              <br>
+              <li><strong>Border box:</strong> The border box wraps the content and any padding.
+                   Its size and style can be controlled using border and related properties.
+              </li>
+              <br>
+              <li><strong>Margin box:</strong> The margin is the outermost layer,
+                   wrapping the content, padding, and border as whitespace between this box and other elements.
+                  Its size can be controlled using margin and related properties.
+              </li>
+          </ul>
+          <p>The below diagram shows these layers:</p>
+          <img id="box-model" src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="The CSS Box Model">
+   
+      </section>
+
+      <section id="What_Next" class="main-section">
+          <header class="section-header"><h2>What Next</h2></header>
+          <p>
+              This documentation only covers the basics of CSS, it's quite a lot but everything we've
+              been able to cover in this guide only scratch the surface of all that's possible with CSS.
+              If your well and done familiar with all topics covered above and would like to learn more about 
+              the Cascading Stylesheets, then below is an ordered guide of the proceeding topics and all about
+              them from the Mozilla Developer Network, check them out!
+          </p>
+          <ol>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders">Backgrounds and borders</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions">Handling different text directions</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content">Overflowing content</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">Values and units</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS">Sizing items in CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements">Images, media, and form elements</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables">Styling tables</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS">Debugging CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing">Organizing your CSS</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text">Styling text</a></li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout">CSS layout</a></li>
+          </ol>
+      </section> 
+
+      <section id="References" class="main-section">
+          <header class="section-header"><h2>References</h2></header>
+    
+          <li>All documentation in this page is taken directly from the <a style = " color: rgb(104, 157, 255);" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guide">MDN</a></li>
         </section>
+      </main>
+    </body>
+    
+    </html>
 
-        <section id="Prerequisites" class="main-section">
-            <header class="section-header"><h2>Prerequisites</h2></header>
-            <p>
-            You should learn the basics of HTML before attempting any CSS.
-            Once you understand the fundamentals of HTML, we recommend that you learn further HTML and CSS at the
-            same time, moving back and forth between the two topics. This is because HTML is far more interesting
-            and much more fun to learn when you apply CSS, and you can't learn CSS without knowing HTML.
-            Before starting this topic, you should also be familiar with using computers and using the web passively
-            (i.e., just looking at it, consuming the content).
-            You should have a basic work environment set up, and understand how to create and manage files.
-            To Summarize, the prerequisites for this documentation include the following;
-            </p>
-            <ol>
-                <li>Good working knowledge of HTML</li>
-                <li>Basic familiarity with using computers, and using the Web passively</li>
-                <li>A basic work environment set up, and an understanding of how to create and manage files.</li>
-            </ol>
-        </section>
+    <script src="script.js"></script>
 
-        <section id="What_is_CSS" class="main-section">
-            <header class="section-header"><h2>What is CSS</h2></header>
 
-            <p>
-                Like HTML, CSS is not a programming language. It's not a markup language either.
-                CSS is a style sheet language. CSS is what you use to selectively style HTML elements.
-                For example, this CSS selects paragraph text, setting the color to red:
-            </p>
-
-            <pre>
-                <code>
-                    <span class="selector">p</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-
-            <p>
-                Let's try it out! Using a text editor, paste the four lines of CSS (above) into a new file.
-                Save the file as style.css in a directory named styles.To make the code work, we still need
-                 to apply this CSS (above) to your HTML document. Otherwise, the styling won't change the
-                appearance of the HTML
-            </p>
-
-            <p>
-                Using CSS you can control exactly how HTML elements look in the browser, 
-                presenting your markup using whatever design you like.
-            </p>
-        </section>
-
-        <section id="CSS_Syntax" class="main-section">
-            <header class="section-header"><h2>CSS Syntax</h2></header>
-
-            <p>
-                CSS is a rule-based language — you define rules specifying groups of styles that should be
-                applied to particular elements or groups of elements on your web page. For example
-                 "I want the main heading on my page to be shown as large red text."
-                The following code shows a very simple CSS rule that would achieve the styling described above:
-            </p>
-
-            <pre>
-                <code>
-                    <span class="selector">h1</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >red</span>;
-                    <span class="property">font-size</span>: <span class="value" >5em</span>;
-                    }
-                </code>
-            </pre>
-
-            <p>   
-                The rule opens with a selector . This selects the HTML element that we are going to style.
-                In this case we are styling level one headings.
-                We then have a set of curly braces { }. Inside those will be one or more declarations,
-                which take the form of property and value pairs.
-                Each pair specifies a property of the element(s) we are selecting, then a value that we'd like
-                to give the property. Before the colon, we have the property, and after the colon, the value. 
-                CSS properties have different allowable values, depending on which property is being specified.
-                In our example, we have the color property, which can take various color values. 
-                We also have the font-size property. This property can take various size units as a value.
-            </p>
-            
-        </section>
-
-        <section id="Selectors" class="main-section">
-            <header class="section-header"><h2>Selectors</h2></header>
-            <p>
-                A CSS selector is the first part of a CSS Rule. It is a pattern of elements and other terms that
-                tell the browser which HTML elements should be selected to have the CSS property values inside 
-                the rule applied to them.
-                The element or elements which are selected by the selector are referred to as the subject of the selector
-            </p>
-
-            <p>
-                If you have more than one thing which uses the same CSS then the individual selectors can be combined
-                into a selector list so that the rule is applied to all of the individual selectors.
-                For example, if I have the same CSS for an h1 and also a class of .special,
-                I could write this as two separate rules.
-
-            <pre>
-                <code>
-                    <span class="selector">h1</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                
-                    <span class="selector">.special</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-
-            I could also combine these into a selector list, by adding a comma between them.
-
-            <pre>
-                <code>
-                    <span class="selector">h1, .special</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-
-            White space is valid before or after the comma. You may also find the selectors more readable
-            if each is on a new line.
-
-            <pre>
-                <code>
-                    <span class="selector">h1,
-                    .special</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-
-            </p>
-        </section>
-
-        <section id="Properties_and_Values" class="main-section">
-            <header class="section-header"><h2>Properties and Values</h2></header>
-
-            <p>
-                At its most basic level, CSS consists of two components:
-                <ul>
-                    <li> <strong>Properties: </strong>These are human-readable identifiers
-                        that indicate which stylistic features you want to modify.
-                        For example, font-size, width, background-color.
-                    </li>
-                    <li>
-                        <strong>Values: </strong> Each property is assigned a value.
-                        This value indicates how to style the property.
-                    </li>
-                </ul>
-            </p>
-            <p>
-                The example below highlights a single property and value.
-                The property name is color and the value is blue
-            </p>
-
-            <pre>
-                <code>
-                    <span class="selector">h1</span> 
-                    {
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-
-            <p>
-                When a property is paired with a value, this pairing is called a CSS declaration.
-                CSS declarations are found within CSS Declaration Blocks.
-                In the example below, highlighting identifies the CSS declaration block.
-            </p>
-
-            <pre>
-                <code>
-                    <span class="property">color </span>: <span class="value" >blue</span>;
-                    <span class="property">background-color </span>: <span class="value" >yellow</span>;
-                </code>
-            </pre>
-
-            <p>
-                Finally, CSS declaration blocks are paired with selectors to produce CSS rulesets (or CSS rules).
-                The example below contains two rules: one for the h1 selector and one for the p selector.
-                The colored highlighting identifies the h1 rule.
-            </p>
-
-            <pre>
-                <code>
-                    <span class="selector">h1</span> 
-                    {
-                       <span class="property">color </span>: <span class="value" >blue</span>;
-                       <span class="property">background-color </span>: <span class="value" >yellow</span>;
-                    }
-                </code>
-            </pre>
-
-            <p>
-                Setting CSS properties to specific values is the primary way of defining layout and styling for
-                a document.
-                The CSS engine calculates which declarations apply to every single element of a page.
-                CSS properties and values are case-insensitive. The property and value in a property-value pair
-                are separated by a colon (:).
-            </p>
-        </section>
-
-        <section id="Cascading_and_Inheritance" class="main-section">
-            <header class="section-header"><h2>Cascading and Inheritance</h2></header>
-
-            <p>
-                CSS stands for Cascading Style Sheets, and that first word cascading is incredibly important
-                to understand — the way that the cascade behaves is key to understanding CSS.
-                At some point, you will be working on a project and you will find that the CSS you thought
-                should be applied to an element is not working.
-                Usually, the problem is that you have created two rules which could potentially apply to the
-                same element.
-                The cascade, and the closely-related concept of specificity,
-                are mechanisms that control which rule applies when there is such a conflict.
-                Which rule is styling your element may not be the one you expect, so you need to understand
-                how these mechanisms work.
-            </p>
-
-            <p>
-                Also significant here is the concept of inheritance, which means that some CSS properties by
-                default inherit values
-                set on the current element's parent element, and some don't.
-                This can also cause some behavior that you might not expect.
-                Let's start by taking a quick look at the key things we are dealing with,
-                then we'll look at each in turn and see how they interact with each other and your CSS.
-                This can seem like a set of tricky concepts to understand.
-                As you get more practice writing CSS, the way it works will become more obvious to you.
-            </p>
-
-            <h3>The Cascade</h3>
-            <p>
-                Stylesheets cascade — at a very simple level, this means that the order of CSS rules matters;
-                when two rules apply that have equal specificity, the one that comes last in the CSS is the
-                one that will be used.
-                In the below example, we have two rules that could apply to the h1 element.
-                The h1 ends up being colored blue. This is because both the rules have an identical element selector,
-                and therefore, carry the same specificity, but the last one in the source order wins.
-            </p>
-            <pre>
-                <code>
-                    <span class="selector">h1</span> 
-                    {
-                       <span class="property">color </span>: <span class="value" >red</span>;
-                    }
-                    <span class="selector">h1</span> 
-                    {
-                       <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-            <h3>Inheritance</h3>
-            <p>
-                Inheritance also needs to be understood in this context — some CSS property values set on
-                parent elements are inherited by their child elements, and some aren't. For example, if you
-                set a color and font-family on an element, every element inside it will also be styled with 
-                that color and font, unless you've applied different color and font values directly to them.
-            </p>
-
-            <p>
-                Some properties do not inherit — for example, if you set a width of 50% on an element,
-                all of its descendants do not get a width of 50% of their parent's width.
-                If this was the case, CSS would be very frustrating to use!
-            </p>
-        </section>
-
-        <section id="CSS_Specificity" class="main-section">
-            <header class="section-header"><h2>CSS Specificity</h2></header>
-
-            <p>
-                Specificity is how the browser decides which rule applies if multiple rules have different selectors,
-                but could still apply to the same element. It is basically a measure of how specific a selector's
-                selection will be:
-            </p>
-            <ul>
-                <li>
-                    An element selector is less specific — it will select all elements of that type that appear on a
-                     page — so will get a lower score.
-                </li>
-                <li>A class selector is more specific — it will select only the elements on a page that have a specific
-                    class attribute value — so will get a higher score
-                </li>
-            </ul>
-
-            <p>
-                Example time! Below, we again have two rules that could apply to the h1.
-                The h1 ends up being colored red — the class selector main-heading gives its rule a higher
-                specificity, and so it will be applied even though the rule with the h1 element selector
-                appears further down in the source order.
-            </p>
-
-            <pre>
-                <code>
-                    <span class="selector">.main-heading</span> 
-                    {
-                       <span class="property">color </span>: <span class="value" >red</span>;
-                    }
-                    <span class="selector">h1</span> 
-                    {
-                       <span class="property">color </span>: <span class="value" >blue</span>;
-                    }
-                </code>
-            </pre>
-            
-        </section>
-
-        <section id="The_Box_Model" class="main-section">
-            <header class="section-header"><h2>The Box Model</h2></header>
-            <p>
-                Everything in CSS has a box around it, and understanding these boxes is key to being 
-                able to create layouts with CSS, or to align items with other items. In this lesson, we will 
-                take a proper look at the CSS Box Model so that you can build more complex layout tasks with
-                an understanding of how it works and the terminology that relates to it.
-            </p>
-
-            <p>
-                In CSS we broadly have two types of boxes — block boxes and inline boxes.
-                These characteristics refer to how the box behaves in terms of page flow and in relation
-                to other boxes on the page.
-                Boxes also have an inner display type and an outer display type.
-                If a box has an outer display type of block, it will behave in the following ways:
-
-            <ul>
-                <li>The box will break onto a new line.</li>
-                <li>box will extend in the inline direction to fill the space available in its container.
-                    In most cases this means that the box will become as wide as its container, filling up 100% of the space available.
-                </li>
-                <li>The width and height properties are respected.</li>
-                <li>Padding, margin and border will cause other elements to be pushed away from the box</li>
-            </ul>
-            
-            <p>Some HTML elements, such as h1 and p, use block as their outer display type by default.</p>
-            
-            <p>If a box has an outer display type of inline, then:</p>
-
-            <ul>
-                <li>The box will not break onto a new line.</li>
-                <li>Horizontal padding, margins, and borders will apply and will cause 
-                    other inline boxes to move away from the box.</li>
-                <li>The width and height properties will not apply.</li>
-                <li>Vertical padding, margins, and borders will apply but will not cause other
-                 inline boxes to move away from the box.</li>
-            </ul>
-
-            <h3>What is the CSS box model?</h3>
-            <p>          
-                The CSS box model as a whole applies to block boxes.
-                Inline boxes use just some of the behavior defined in the box model. 
-                The model defines how the different parts of a box — margin, border, padding, and content
-                — work together to create a box that you can see on a page. To add some additional complexity,
-                there is a standard and an alternate box model.
-            </p>
-            <h3>Parts of a box</h3>
-            
-            <p>Making up a block box in CSS we have the:</p>
-
-            <ul>
-                <li><strong>Content box:</strong> The area where your content is displayed,
-                     which can be sized using properties like width and height.
-                </li>
-                <br>
-                <li><strong>Padding box:</strong> The padding sits around the content as white space;
-                     its size can be controlled using padding and related properties.
-                </li>
-                <br>
-                <li><strong>Border box:</strong> The border box wraps the content and any padding.
-                     Its size and style can be controlled using border and related properties.
-                </li>
-                <br>
-                <li><strong>Margin box:</strong> The margin is the outermost layer,
-                     wrapping the content, padding, and border as whitespace between this box and other elements.
-                    Its size can be controlled using margin and related properties.
-                </li>
-            </ul>
-            <p>The below diagram shows these layers:</p>
-            <img id="box-model" src="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png" alt="The CSS Box Model">
-     
-        </section>
-
-        <section id="What_Next" class="main-section">
-            <header class="section-header"><h2>What Next</h2></header>
-            <p>
-                This documentation only covers the basics of CSS, it's quite a lot but everything we've
-                been able to cover in this guide only scratch the surface of all that's possible with CSS.
-                If your well and done familiar with all topics covered above and would like to learn more about 
-                the Cascading Stylesheets, then below is an ordered guide of the proceeding topics and all about
-                them from the Mozilla Developer Network, check them out!
-            </p>
-            <ol>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Backgrounds_and_borders">Backgrounds and borders</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Handling_different_text_directions">Handling different text directions</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Overflowing_content">Overflowing content</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units">Values and units</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS">Sizing items in CSS</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Images_media_form_elements">Images, media, and form elements</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Styling_tables">Styling tables</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS">Debugging CSS</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Organizing">Organizing your CSS</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text">Styling text</a></li>
-                <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout">CSS layout</a></li>
-            </ol>
-        </section> 
-
-        <section id="References" class="main-section">
-            <header class="section-header"><h2>References</h2></header>
-
-            <li>All documentation in this page is taken directly from the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Guide">MDN</a></li>
-        </section>
-
-    </main>
-</body>
-
-</html>
+   
