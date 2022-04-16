@@ -442,7 +442,7 @@ input:checked + .slider:before {
   code
   {
     position: relative;
-    left: -150px;
+    left: -165px;
   }
 
   #back-to-top span
