@@ -1,0 +1,803 @@
+html
+{
+    scroll-behavior: smooth;
+}
+
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow-x:  hidden;
+}
+
+#nav-bar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.7;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: hsl(277, 38%, 16%);
+    color: white;
+}
+
+#icons
+{
+    position: relative;
+    left: 70px;
+    
+}
+i
+{
+    font-size: 1.5em;
+    padding: 1em;
+    opacity: 1;
+}
+
+#signout
+{
+    background-color: white;
+    color: hsl(277, 38%, 16%);
+    border-radius: 15px;
+    padding: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border: none;
+    font-size: 15px;
+    opacity: 1;
+    font-weight: bold;
+}
+
+i:hover, #signout:hover
+{
+    cursor: pointer;
+}
+
+#nav-compinfo
+{
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#nav-compinfo img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    opacity: 1;
+    
+}
+
+.fa-bars
+{
+    display: none;
+}
+
+
+
+#name
+{
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    opacity: 1;
+}
+#nav-links
+{
+    padding: 15px;
+    display: flex;
+    position: relative;
+    left: 7em;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#nav-links a
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    opacity: 1;
+    font-weight: lighter;
+
+}
+
+#nav-links a:hover
+{
+    text-decoration: underline;
+}
+
+#card
+{
+    background: hsl(277, 100%, 93%);
+    color: hsl(277, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+#comp
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4em;
+    padding-right: 0em;
+    width: 50%;
+    position: relative;
+    left: 0;
+    order: 2;
+}
+
+#comp-about h1
+{
+    font-weight: 700;
+    color: hsl(277, 38%, 16%);
+}
+
+#comp-about p
+{
+    width: 80%;
+    text-transform: capitalize;
+    color : hsl(277, 38%, 16%);
+}
+.lower
+{
+    font-weight: 400;
+}
+
+#comp-stats
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+div#comp-stats div
+{
+    display: flex;
+    flex-direction: column;
+    margin-right: 3em;    
+}
+
+div#comp-stats div p
+{
+    font-size: 13px;
+    color : hsl(277, 38%, 16%);
+    text-transform: capitalize;
+}
+
+
+div#comp-stats div h2
+{
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 2em;
+    color: hsl(277, 38%, 16%);
+}
+
+#bg-image 
+{
+    background-image: url(https://i.imgur.com/RrgOe4q.png);
+    width: 50%;
+    position: relative;
+    background-size: contain;
+    background-repeat:no-repeat;
+    order: 1;
+}
+
+#layer
+{
+    background-color: hsl(277, 100%, 93%);
+    height: 100%;
+    opacity: 0;
+    border-radius: inherit;
+}
+
+#subscribe
+{
+    height: 10%;
+    width: 100%;
+    position: relative;
+    top: 3em;
+    background: white;
+    color: hsl(277, 38%, 16%);
+
+}
+
+#form
+{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: lighter;
+}
+
+#email
+{
+    margin-left: 70px;
+    width: 15%;
+    border:none;
+    padding: 1em;
+    color: black;
+    font-size: 15px;
+    border-bottom: 2px solid hsl(277, 38%, 16%);
+    padding-bottom: 0.5em;
+    outline: none;
+    text-transform: capitalize;
+}
+
+#submit
+{
+    background-color: hsl(277, 38%, 16%);
+    border-radius: 15px;
+    padding: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
+    color: white;
+    border: none;
+    margin-right: 80px;
+
+}
+
+#submit:hover
+{
+    cursor: pointer;
+    background-color: hsl(277, 100%, 93%);
+    color: hsl(277, 38%, 16%);
+    transition: 0.5s ease-in-out;
+}
+#topic
+{
+    text-align: center;
+    color: hsl(277, 38%, 16%);
+    text-decoration: underline;
+}
+#topic h3
+{
+    padding: 2em;
+}
+#sales
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2em;
+    position: relative;
+    top: 1em;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sales-item
+{
+    display: flex;
+    flex-direction: column;
+    height: 210px;
+    width: 10%;
+    background:white;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    color: hsl(277, 38%, 16%);
+    padding: 2em;
+}
+
+.sales-item:hover
+{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.item-desc
+{
+    font-weight: lighter;
+    text-align: center;
+    height: 90px;
+    width: 100%;
+}
+
+.discount
+{
+    color: gray;
+    padding-right: 10px;
+}
+
+#prod1
+{
+    background: url(https://i.imgur.com/jOGh0A7.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+#prod2
+{
+    background: url(https://i.imgur.com/wax0HEy.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod3
+{
+    background: url(https://i.imgur.com/NNGMwFO.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod4
+{
+    background: url(https://i.imgur.com/6JUChG1.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod5
+{
+    background: url(https://i.imgur.com/1sdUMhm.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod6
+{
+    background: url(https://i.imgur.com/vi2s475.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod7
+{
+    background: url(https://i.imgur.com/GtrmECo.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#prod8
+{
+    background: url(https://i.imgur.com/iN42v14.jpg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    height: 120px;
+    width: 100%;
+}
+
+#oos
+{
+    color: rgba(182, 182, 182, 0.6);
+}
+
+#more
+{
+    position: relative;
+    top: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#more a
+{
+  padding: 2em;
+  font-size: 13px;
+  font-weight: normal;
+  padding-right: 6em;
+  color: hsl(277, 64%, 61%);  
+}
+
+#tutorials
+{
+    background-color: hsl(277, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 5em;
+}
+
+.tutorial-vid
+{
+    position: relative;
+    width: 35%;
+    height: 260px;
+    margin: 2em;
+    border: 3px solid hsl(277, 100%, 93%);
+}
+
+#tuttext
+{
+    color: white;
+    text-align: left;
+}
+
+footer
+{
+    height: 200px;
+    background-color: hsl(277, 100%, 93%);
+    color: hsl(277, 38%, 16%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#footer-other
+{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top : 2em;
+}
+.footer-links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+#socials 
+{   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top : 2em;
+}
+
+
+#socials p
+{
+    position: relative;
+    right: 3em;
+    font-weight: normal;
+    
+}
+
+@media (max-width : 768px)
+{
+    #card
+    {
+        background: hsl(277, 100%, 93%);
+        color: hsl(277, 38%, 16%);
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+    
+    #comp
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 2em;
+        width: 100%;
+        padding-left: 0em;
+        margin-left: 0%;
+        position: relative;
+        left: 0;
+        order: 2;
+    }
+    #comp-about
+    {
+        font-size: 14px;
+        position: relative;
+        margin-left: 40px;
+    }
+    #comp-about h1
+    {
+        font-weight: 700;
+        text-align: center;
+        color: hsl(277, 38%, 16%);
+    }
+    
+    #comp-about p
+    {
+        width: 100%;
+        font-size: 13px;
+        text-align: center;
+        text-transform: capitalize;
+        color : hsl(277, 38%, 16%);
+    }
+    .lower
+    {
+        font-weight: 400;
+    }
+    
+    #comp-stats
+    {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    div#comp-stats div
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 0;
+        justify-content: space-around;
+        margin-left: 40px;
+    }
+    
+    div#comp-stats div p
+    {
+        color : hsl(277, 38%, 16%);
+        text-transform: capitalize;
+        font-size: 13px;
+    }
+    
+    
+    div#comp-stats div h2
+    {
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 0px;
+        color: hsl(277, 38%, 16%);
+    }
+    
+    #bg-image 
+    {
+        display: none;
+    }
+
+    #nav-bar
+    {
+        height: 75px;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    #nav-links
+    {
+        display: none;
+    }
+
+    #signout
+    {
+        font-size: 14px;
+        padding: 0.8em;
+        min-width: 90px;
+    }
+
+    .fa-bars
+    {
+        display: block;
+    }
+    #icons
+    {
+        display: flex;
+        flex-direction: row;
+        left: 0px;
+    }
+
+    .fa-cart-shopping, .fa-user
+    {
+        padding-right: 0%; 
+    }
+
+    .fa-solid
+    {
+        font-size: 14px;
+    }
+
+    #name
+    {
+        font-size: 25px;
+        font-weight: 800;
+    }
+
+    #nav-compinfo
+    {
+        padding: 0%;
+    }
+    #nav-compinfo img 
+    {
+        padding-right: 0%;
+        padding-left: 0%;
+        transform: scale(0.8);
+    }
+    
+    #topic h2 
+    {
+        font-size: 18px;
+        padding: 0.5em;
+    }
+
+    #sales
+    {
+        margin-top: 0;
+        top: 0;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+
+    .sales-item
+    {
+        padding: 6em;
+        margin: 3em;
+    }
+
+    #tutorials
+    {
+        height: 800px;
+        flex-direction: column;
+    }
+
+    iframe
+    {
+        width: 100%;
+        height: 100%;
+    }
+
+    #tuttext
+    {
+        text-align: center;
+        font-size: 18px;
+    }
+
+
+    .tutorial-vid
+    {
+        width: 80%;
+    }
+
+
+    .item-desc
+    {
+        font-size: 14px;
+    }
+    .item-desc h3
+    {
+        position: relative;
+        right: 30px;
+    }
+
+    .item-pic
+    {
+        transform: scale(2.0);
+    }
+
+    #subscribe
+    {
+        height: 200px;
+        width: 100%;
+    }
+
+    label
+    {
+        font-size: 13px;
+        display: flex;
+        flex-direction: column;
+    }
+    #form
+    {
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #email
+    {
+        width: 50%;
+        font-size: 13px;
+        margin-left: 0;
+    }
+
+    #submit
+    {
+        position: relative;
+        top: 2em;
+        margin-right: 0;
+        font-size: 14px;
+        padding: 1em;
+        min-width: 140px;
+        text-transform: lowercase;
+    
+    }
+
+    #more
+    {
+        position: relative;
+        top: 0;
+        justify-content: center;
+    }
+
+    #more a
+    {
+        text-align: center;
+        padding-right: 2em;
+        font-size: 13px;
+    }
+
+    #socials
+    {
+        top: 2em;
+
+    }
+
+    .footer-links
+    {
+        font-size: 13px;
+    }
+
+    .footer-links p
+    {
+        margin: 0%;
+        padding: 6px;
+    }
+
+    #footer-other
+    {
+        flex-direction: column;
+        width: 30%;
+        top: 1.5em;
+    }
+
+    #socials p
+    {
+        font-size: 13px;
+        right: 0;
+    }
+
+    .fa-brands
+    {
+        padding-top: 0em;
+        padding-right: 0em;
+    }
+
+    .fa-youtube
+    {
+        padding-bottom: 0%;
+    }
+    body
+    {
+        overflow-x: hidden;
+    }
+}
+
