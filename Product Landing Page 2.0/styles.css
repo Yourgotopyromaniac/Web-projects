@@ -16,7 +16,7 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  opacity: 0.7;
+  opacity: 0.6;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,6 +126,7 @@ i:hover, #signout:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100vh;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -476,6 +477,8 @@ div#comp-stats div h2 {
 #tuttext {
   color: white;
   text-align: left;
+  position: relative;
+  left: 1em;
 }
 
 footer {
@@ -709,16 +712,32 @@ footer {
   #sales {
     margin-top: 0;
     top: 0;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .sales-item {
     padding: 6em;
-    margin: 3em;
+    margin: 1em;
+    width: 60px;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .sales-item:hover {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
   }
   #tutorials {
     height: 800px;
@@ -734,12 +753,14 @@ footer {
   #tuttext {
     text-align: center;
     font-size: 18px;
+    left: 0;
   }
   .tutorial-vid {
     width: 80%;
   }
   .item-desc {
     font-size: 14px;
+    width: 50px;
   }
   .item-desc h3 {
     position: relative;
@@ -796,6 +817,7 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    width: 200%;
   }
   #more a {
     text-align: center;
