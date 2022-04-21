@@ -1,0 +1,665 @@
+/*Styling for Custom Scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(141, 141, 141, 0.6);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3c3c3c;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #1e1e1e;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+/*Material Icons Class Definition*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: white;
+  font-family: 'Sora','sans-serif';
+  padding: 0;
+  margin: 0;
+}
+
+/*Styling for Navigation Bar*/
+#navbar {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: rgba(138, 138, 138, 0.123);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+#logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-transform: uppercase;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  bottom: 20px;
+}
+
+#logo span {
+  position: relative;
+  font-size: 14px;
+}
+
+#names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#name {
+  position: fixed;
+  -webkit-animation-name: text-slide;
+          animation-name: text-slide;
+  -webkit-animation-duration: 1.2s;
+          animation-duration: 1.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+/*Logo Animation*/
+@-webkit-keyframes text-slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+@keyframes text-slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+            transform: translateX(50px);
+  }
+}
+
+#links {
+  position: relative;
+  left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1.5em;
+  width: 40%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+  padding: 1em;
+}
+
+/*Styling for Theme Switch*/
+#theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+.fa-sun {
+  margin-right: 2px;
+}
+
+.fa-moon {
+  margin-left: -5px;
+}
+
+.fa-sun, .fa-moon {
+  width: 10px;
+  height: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background-color: #1e1e1e;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3c3c3c;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #3c3c3c;
+          box-shadow: 0 0 1px #3c3c3c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background-color: #1e1e1e;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #3c3c3c;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #3c3c3c;
+          box-shadow: 0 0 1px #3c3c3c;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/*Styling For Welcome Section/Banner*/
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://www.superiorwallpapers.com/images/lthumbs/2019-12/12984_White-nature-and-one-single-tree-HD-wallpaper.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-transform: capitalize;
+}
+
+h1 {
+  font-size: 40px;
+  padding: 2em;
+  width: 40%;
+}
+
+/*Styling for about section*/
+.about {
+  background-color: #fafafa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+#about-text {
+  padding: 2em;
+  width: 50%;
+  margin-left: 2em;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.arrow {
+  -webkit-transform: rotate(220deg);
+          transform: rotate(220deg);
+  font-size: 12em;
+  position: relative;
+  left: 40%;
+}
+
+#about-hobbies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 50%;
+}
+
+#hobbies {
+  width: 90%;
+  padding: 1.5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#hobbies div {
+  padding: 0.5em;
+}
+
+.hobby-tile:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hobby1 {
+  background-color: #cccccc;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 1 / 6 / 3;
+}
+
+.hobby2 {
+  background-color: #9c9c9c;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: 1 / 3 / 3 / 5;
+}
+
+.hobby3 {
+  background-color: #e2e2e2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 3 / 4 / 4;
+}
+
+.hobby4 {
+  background-color: #c7c7c7;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 3 / 4 / 4 / 5;
+}
+
+.hobby5 {
+  background-color: #f0f0f0;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 3 / 5 / 4;
+}
+
+.hobby6 {
+  background-color: #bebebe;
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-area: 4 / 4 / 5 / 5;
+}
+
+#hobbies i {
+  font-size: 24px;
+}
+
+.hobby-type {
+  font-weight: 500;
+  margin: 0.5em;
+}
+
+/*Styling for projects sections*/
+.project-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #f0f0f0;
+}
+
+#projects-inner-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.project-case, .odd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em;
+}
+
+.even {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  text-align: left;
+}
+
+.project-desc {
+  width: 50%;
+}
+
+.project-info {
+  text-align: left;
+}
+
+.project-tile {
+  width: 40%;
+  height: 300px;
+  background: rgba(138, 138, 138, 0.123);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+/*Styling for upto section*/
+.upto-inner-div {
+  padding: 1em;
+}
+
+#upto-title {
+  padding-left: 1em;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/*Dark Mode Classes' Definition*/
+/*WARNING : Leave this section at the bottom of the stylesheet (except media queries) at all times to avoid
+other classes overiding the dark mode declarations due to specificity*/
+.link-dark {
+  color: white;
+}
+
+.welcome-dark {
+  background-image: url(images/black2.jpg);
+}
+
+.welcome-text-dark {
+  color: white;
+}
+
+.logo-dark {
+  color: white;
+}
+
+.about-dark {
+  background-color: black;
+  color: white;
+}
+
+.hobby1-dark {
+  background-color: #141414;
+}
+
+.hobby2-dark {
+  background-color: #525252;
+}
+
+.hobby3-dark {
+  background-color: #333333;
+}
+
+.hobby4-dark {
+  background-color: #1e1e1e;
+}
+
+.hobby5-dark {
+  background-color: #3c3c3c;
+}
+
+.hobby6-dark {
+  background-color: #282828;
+}
+
+.project-dark {
+  color: white;
+  background: #1e1e1e;
+}
+
+@media screen and (max-width: 768px) {
+  #navbar {
+    height: 10vh;
+  }
+  #links {
+    display: none;
+  }
+  #theme {
+    left: 12%;
+  }
+  h1 {
+    word-wrap: normal;
+  }
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: unset;
+  }
+  #about-text {
+    padding: 0;
+    margin-left: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 90%;
+  }
+  #about-hobbies {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+  }
+  .arrow {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
