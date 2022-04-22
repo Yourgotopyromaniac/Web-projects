@@ -1,5 +1,5 @@
 //color variables
-$base-light: rgb(250,250,250);
+$base-light: rgb(245,245,245);
 $lighter: rgb(240,240,240);
 $lightest: white;
 $base-dark: rgb(60,60,60);
@@ -7,6 +7,10 @@ $darker: rgb(40,40,40);
 $darkest: rgb(30,30,30);
 $x-dark: rgb(20,20,20);
 $glass: rgba(138, 138, 138, 0.123);
+
+p{
+    font-size: 15px;
+}
 
 /*Styling for Custom Scrollbar*/
 ::-webkit-scrollbar {
@@ -63,6 +67,30 @@ body
     padding: 0;
     margin: 0;
 }
+.bg-text 
+{
+    display: block;
+    position: absolute;
+    color: $base-light;
+    top: 0;
+    right: 0;
+    opacity: 0;
+    z-index: 0;
+}
+.skill-tile:hover .bg-text
+{
+    font-size: 100px;
+    opacity: 0.7;
+    transition: 0.8s;
+}
+
+.fa-code
+{
+    position: relative;
+    top: -30%;
+    right: -50%;
+    font-size: 50px;
+}
 /*Styling for Navigation Bar*/
 #navbar
 {
@@ -74,7 +102,7 @@ body
     width: 100%;
     background-color: $glass;
     backdrop-filter: blur(5px);
-    z-index: 2;
+    z-index: 10;
 }
 
 #logo
@@ -322,6 +350,8 @@ h1
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 700px;
+    
 }
 
 #about-text
@@ -330,86 +360,81 @@ h1
     width: 50%;
     margin-left: 2em;
     align-self: flex-start;
+    z-index: 3;
 }
 .arrow
 {
     transform: rotate(220deg);
     font-size: 12em;
     position: relative;
-    left: 40%;
+    left: 60%;
+    z-index: 3;
     
 }
-#about-hobbies
+#about-skills
 {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
     width: 50%;
+    z-index: 3;
 }
-
-#hobbies
+#about-skills h2
+{
+    align-self: flex-start;
+    padding: 1em;
+    z-index: 3;
+}
+#skills
 {
     width: 90%;
-    padding: 1.5em;
+    height: 250px;
+    padding-bottom: 2em;
+    position: relative;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    z-index: 3;
 }
 
-#hobbies div
+#skills div
 {
     padding: 0.5em;
 }
-.hobby-tile:hover
+.skill-tile:hover
 {
     transform: scale(1.1);
     transition: 0.5s;
 
 }
-.hobby1
+.skill1
 {
     background-color: rgb(204, 204, 204);
-    grid-area: 1 / 1 / 6 / 3;
+    grid-area: 1 / 1 / 5 / 3;
 }
-.hobby2
+.skill2
 {
     background-color: rgb(156, 156, 156);
     grid-area: 1 / 3 / 3 / 5;
 }
 
-.hobby3
+.skill3
 {
     background-color: rgb(226, 226, 226);
-    grid-area: 3 / 3 / 4 / 4;
+    grid-area: 3 / 3 / 5 / 4;
 }
 
-.hobby4
+.skill4
 {
     background-color: rgb(199, 199, 199);
-    grid-area: 3 / 4 / 4 / 5;
+    grid-area: 3 / 4 / 5 / 5;
 }
 
-.hobby5
-{
-    background-color: rgb(240, 240, 240);
-    grid-area: 4 / 3 / 5 / 4;
-}
-
-.hobby6
-{
-    background-color: rgb(190, 190, 190);
-    grid-area: 4 / 4 / 5 / 5;
-}
-
-#hobbies i
-{
-    font-size: 24px;
-}
-
-.hobby-type
+.skill-type
 {
     font-weight: 500;
     margin: 0.5em;
@@ -418,6 +443,7 @@ h1
 /*Styling for projects sections*/
 .project-box
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -459,26 +485,185 @@ h1
 .project-tile
 {
     width: 40%;
-    height: 300px;
-    background: $glass;
-    backdrop-filter: blur(3px);
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $base-light;
     border-radius: 10px;
+    box-shadow: rgba(100,100,111, 0.2) 0 7px 29px 0;
     z-index: 1;
 }
 
-/*Styling for upto section*/
-.upto-inner-div
+.proj-demo
 {
-    padding: 1em;
+    width: 100%;
+}
+.video
+{
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 0;
+    z-index: 2;
+}
+.tdp-video
+{
+    background-image: url('images/tdp_image.PNG');
+}
+.todo-video
+{
+    background-image: url('images/todo_image.PNG');
 }
 
-#upto-title
+.haven-video
 {
-    padding-left: 1em;
+    background-image: url('images/haven_image.PNG');
+}
+
+.b3-video
+{
+    background-image: url('images/3buy3_image.PNG');
+}
+.google-video
+{
+    background-image: url('images/google_image.PNG');
+}
+video::-webkit-media-controls
+{
+    display:none !important;
+}
+
+.fa-brands
+{
+    font-size: 36px;
+    padding: 0.2em;
+}
+
+.proj-link-container
+{
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    width: 50%;
+}
+
+.fa-github, .fa-codepen
+{
     font-size: 40px;
+}
+.project-link
+{
+    color: $base-dark;
+    font-size: 10px;
+}
+.left-link
+{
+    
+    border: 2px solid $base-dark;
+    border-right: none;  
+}
+.right-link
+{
+    border: 2px solid $base-dark;
+    border-left: none;
+}
+
+/*Styling for upto section*/
+
+.upto-box
+{
+    background-color: $lighter;
+}
+.inner-div
+{
+    padding: 2em;
+}
+
+.inner-title
+{
+    font-size: 36px;
     font-weight: 600;
 }
 
+/*Styling for Contact Section*/
+.contact-box
+{
+    display: flex;
+    flex-direction: column;
+    background-color: $base-light;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#contact-text
+{
+    text-align: center;
+    width: 50%;
+    padding: 1.5em;
+}
+
+#contact-icons
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+}
+
+#back-to-top
+{
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  text-decoration: none;
+  background: $base-light;
+  border-radius: 50%;
+  z-index: 4;
+  height: 20px;
+  width: 20px;
+  color: $darker;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+}
+
+.back-to-top-dark
+{
+  background: $base-dark !important ;
+  color: $base-light !important;
+}
+
+#back-to-top i
+{
+  font-size: 24px;
+}
+
+#back-to-top span
+{
+  color: rgba(0,0,0,0);
+  border: none;
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  left: 10px;
+  bottom: 5px;
+}
+
+#back-to-top span:hover
+{
+  color: rgb(148, 148, 148);
+  transition: all 0.4s ease-in-out ;
+}
+
+#back-to-top:hover
+{
+  width: 120px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out ;
+}
 /*Dark Mode Classes' Definition*/
 /*WARNING : Leave this section at the bottom of the stylesheet (except media queries) at all times to avoid
 other classes overiding the dark mode declarations due to specificity*/
@@ -507,38 +692,60 @@ other classes overiding the dark mode declarations due to specificity*/
     color: $lightest;
 }
 
-.hobby1-dark
+.skill1-dark
 {
     background-color: $x-dark;
 }
-.hobby2-dark
+.skill2-dark
 {
     background-color: rgb(82, 82, 82);
 }
 
-.hobby3-dark
+.skill3-dark
 {
     background-color: rgb(51, 51, 51);
 }
 
-.hobby4-dark
+.skill4-dark
 {
     background-color: $darkest;
 }
-.hobby5-dark
+.skill5-dark
 {
     background-color: $base-dark;
 }
-.hobby6-dark
+.skill6-dark
 {
     background-color: $darker;
 }
-.project-dark
+.project-box-dark
 {
     color: $lightest;
     background: $darkest;
 }
 
+.project-tile-dark
+{
+    background-color: $base-dark;
+    box-shadow: rgba(37, 37, 37, 0.2) 0 7px 29px 0;
+    color: white;
+}
+.proj-link-dark
+{
+    border-color: $base-light;
+    color: white;
+}
+
+.upto-dark
+{
+    color: $lightest;
+    background-color: $darkest;
+}
+.contact-dark
+{
+    color: $lightest;
+    background-color: $x-dark;
+}
 @media screen and(max-width : 768px)
 {
 
@@ -573,7 +780,7 @@ other classes overiding the dark mode declarations due to specificity*/
         align-self: center;
         width: 90%;
     }
-    #about-hobbies
+    #about-skills
     {
         align-self: center;
         width: 100%;
@@ -583,4 +790,18 @@ other classes overiding the dark mode declarations due to specificity*/
         display: none;
     }
 
+    .project-case
+    {
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+
+    .project-desc, .project-tile
+    {
+        width: 100%;
+    }
+    .project-tile
+    {
+        height: 200px;
+    }
 }
