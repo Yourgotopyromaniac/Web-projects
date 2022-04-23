@@ -8,6 +8,20 @@ $darkest: rgb(30,30,30);
 $x-dark: rgb(20,20,20);
 $glass: rgba(138, 138, 138, 0.123);
 
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --main-clr: rgb(124, 124, 124);
+  --nav-shadow: 0px 3px var(--main-clr);
+}
+
 p{
     font-size: 15px;
 }
@@ -103,7 +117,7 @@ body
     font-size: 50px;
 }
 /*Styling for Navigation Bar*/
-#navbar
+nav
 {
     position: fixed;
     display: flex;
@@ -111,6 +125,7 @@ body
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding: 1em;
     background-color: $glass;
     backdrop-filter: blur(5px);
     z-index: 10;
@@ -142,6 +157,7 @@ body
 #name
 {
     position: fixed;
+    top:50%;
     animation-name: text-slide;
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
@@ -169,18 +185,7 @@ body
     }
 }
 
-#links
-{
-    position: relative;
-    left: 15%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    padding: 1.5em;
-    width: 40%;
-    text-transform: uppercase;
-}
+
 a
 {
     text-decoration: none;
@@ -188,6 +193,108 @@ a
     font-size: 12px;
     padding: 1em;
 }
+
+
+nav ul {
+  --padding: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 12.5%;
+  width: 50%;
+  overflow-y: hidden;
+  transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
+}
+
+nav ul li {
+  padding: var(--padding);
+}
+
+nav ul li a 
+{
+  text-decoration: none;
+  position: relative;
+  width: 100%;
+  text-transform: uppercase;
+  color: $x-dark;
+  font-weight: 500;
+  
+}
+
+/*nav ul li a::after {
+  content: "";
+  width: 0%;
+  height: 1.7px;
+  border-radius: 99px;
+  background: var(--main-clr);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}*/
+
+nav .menu {
+  width: 22px;
+  height: 16px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  margin: 20px;
+}
+
+nav .menu span {
+  background: $base-dark;
+  transition: 0.3s ease;
+  transform-origin: left;
+}
+
+#bar1
+{
+    height: 2px;
+    width: 100%;
+}
+#bar2
+{
+    height: 2px;
+    width: 70%;
+    align-self: flex-end;
+}
+
+#bar3
+{
+    height: 2px;
+    width: 100%;
+    align-self: flex-end;
+}
+
+nav .menu.active span {
+  background: $base-dark;
+}
+
+nav .menu.active span:nth-child(1) {
+  transform:  rotate(40deg);
+}
+
+nav .menu span:nth-child(3) {
+  transform-origin: left;
+}
+
+nav .menu.active span:nth-child(3) {
+  transform: rotate(-40deg);
+  width: 100%;
+}
+
+nav .menu.active span:nth-child(2) {
+  transform: scale(0);
+}
+
 
 /*Styling for Theme Switch*/
 #theme
@@ -199,27 +306,12 @@ position: relative;
 transform: scale(0.8);
 } 
 
-.fa-sun
-{
-margin-right : 2px;
-}
-.fa-moon
-{
-margin-left : -5px;
-} 
-
-.fa-sun,.fa-moon
-{
-width: 10px;
-height : 10px;
-padding : 10px;
-margin-bottom : 5px;
-}
 .switch {
 position: relative;
 display: inline-block;
 width: 40px;
 height: 24px;
+margin: 0.2em;
 }
 
 .switch input { 
@@ -360,11 +452,11 @@ section
 {
     background-color: black;
     border: 1px solid white;
-    padding: 0.8em;
+    padding: 1em;
     color: white ;
     font-size: 15px;
     font-weight: bolder;
-    width: 12%;
+    width: 30%;
 
 }
 
@@ -372,9 +464,7 @@ section
 {
     background-color: $lighter;
     border: 1px solid $x-dark;
-    padding: 0.8em;
     color: $x-dark;
-    width: 12%;
     
 }
 
@@ -705,8 +795,8 @@ footer
   background: $base-light;
   border-radius: 50%;
   z-index: 4;
-  height: 20px;
-  width: 20px;
+  height: 45px;
+  width: 45px;
   color: $darker;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
 }
@@ -724,12 +814,12 @@ footer
 
 #back-to-top span
 {
-  color: rgba(0,0,0,0);
+  color: rgba(0, 0, 0, 0);
   border: none;
-  font-size: 14px;
+  font-size: 12px;
   text-decoration: none;
   position: relative;
-  left: 10px;
+  left: 5px;
   bottom: 5px;
 }
 
@@ -752,7 +842,10 @@ other classes overiding the dark mode declarations due to specificity*/
 {
     color: $lightest;
 }
-
+.span-dark
+{
+    background-color: $lighter !important;
+}
 .welcome-dark
 {
     background-image: url(images/black2.jpg);
@@ -857,14 +950,36 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         font-size: 1.5em;
     }
-    #navbar
-    {
-        height: 10vh;
-    }
-    #links
-    {
-        display: none;
-    }
+    nav .menu {
+        display: flex;
+      }
+    
+      nav ul {
+        --height: 0px;
+    
+        flex-direction: column;
+        background-color: $glass;
+        backdrop-filter: blur(10px);
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 100%;
+        height: var(--height);
+        transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+      }
+      nav ul.active {
+        --height: calc(
+          (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+        );
+        transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+
+      }
+    
+      nav ul li {
+        width: 100%;
+        text-align: center;
+      }
+
     #theme
     {
         left: 12%;
@@ -878,7 +993,7 @@ other classes overiding the dark mode declarations due to specificity*/
     }
     #welcome-inner-box
     {
-        width: 80%;
+        width: 100%;
         padding: 2em;
     }
     .hire-btn

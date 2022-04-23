@@ -36,6 +36,9 @@ function darkMode()
   document.getElementById("footer").classList.toggle("footer-dark");
   document.getElementById("svg").classList.toggle("svg-icon-dark");
   document.getElementById("hire").classList.toggle("hire-btn-dark");
+  document.getElementById("bar1").classList.toggle("span-dark");
+  document.getElementById("bar2").classList.toggle("span-dark");
+  document.getElementById("bar3").classList.toggle("span-dark");
 } 
 
 var nickName = document.getElementById("name");
@@ -68,3 +71,12 @@ function hoverVideo(e) {
 function hideVideo(e) {
     $('video', this).get(0).pause(); 
 }
+
+const navigation = document.getElementById("nav");
+const menu = document.getElementById("menu");
+
+menu.addEventListener("click", () => {
+  navigation.style.setProperty("--childenNumber", navigation.children.length);
+  navigation.classList.toggle("active");
+  menu.classList.toggle("active");
+});
