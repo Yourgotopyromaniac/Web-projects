@@ -490,7 +490,6 @@ h1
     flex-direction: column;
     justify-content: space-between;
     background-color: $base-light;
-    border-radius: 10px;
     box-shadow: rgba(100,100,111, 0.2) 0 7px 29px 0;
     z-index: 1;
 }
@@ -563,12 +562,12 @@ video::-webkit-media-controls
 .left-link
 {
     
-    border: 2px solid $base-dark;
+    border: 1px solid $base-dark;
     border-right: none;  
 }
 .right-link
 {
-    border: 2px solid $base-dark;
+    border: 1px solid $base-dark;
     border-left: none;
 }
 
@@ -577,6 +576,7 @@ video::-webkit-media-controls
 .upto-box
 {
     background-color: $lighter;
+    border-top: 1px solid rgb(190, 190, 190);
 }
 .inner-div
 {
@@ -598,6 +598,8 @@ video::-webkit-media-controls
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    padding-bottom: 2em;
+    background-image: url(images/whitecard.jpg);
 }
 
 #contact-text
@@ -614,6 +616,26 @@ video::-webkit-media-controls
     align-items: center;
     width: 30%;
 }
+
+footer
+{
+    background: $lighter;
+}
+.footer-box
+{
+    position: relative;
+    left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    padding: 2em;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
 
 #back-to-top
 {
@@ -726,14 +748,14 @@ other classes overiding the dark mode declarations due to specificity*/
 
 .project-tile-dark
 {
-    background-color: $base-dark;
+    background-color: $darker;
     box-shadow: rgba(37, 37, 37, 0.2) 0 7px 29px 0;
     color: white;
 }
 .proj-link-dark
 {
     border-color: $base-light;
-    color: white;
+    color: $lighter;
 }
 
 .upto-dark
@@ -744,11 +766,25 @@ other classes overiding the dark mode declarations due to specificity*/
 .contact-dark
 {
     color: $lightest;
-    background-color: $x-dark;
+    background-image: url(images/blackcard.jpg);
+}
+
+.footer-dark
+{
+    color: white;
+    background: $darkest;
 }
 @media screen and(max-width : 768px)
 {
-
+    p
+    {
+        font-size: 1em;
+        text-align: center;
+    }
+    .fa-brands
+    {
+        font-size: 1.5em;
+    }
     #navbar
     {
         height: 10vh;
@@ -763,9 +799,15 @@ other classes overiding the dark mode declarations due to specificity*/
     }
     h1
     {
+        width: 70%;
+        padding: 1em;
         word-wrap: normal;
     }
-
+    .inner-title
+    {
+        font-size: 1.8em;
+        text-align: center;
+    }
     #about
     {
         flex-direction: column;
@@ -775,16 +817,26 @@ other classes overiding the dark mode declarations due to specificity*/
 
     #about-text
     {
-        padding: 0;
+        padding: 1em;
         margin-left: 0;
         align-self: center;
-        width: 90%;
+        width: 80%;
+    }
+    #about-skills h2
+    {
+        align-self: center;
     }
     #about-skills
     {
         align-self: center;
         width: 100%;
     }
+
+    #skills
+    {
+        width: 80%;
+    }
+
     .arrow
     {
         display: none;
@@ -795,13 +847,49 @@ other classes overiding the dark mode declarations due to specificity*/
         flex-direction: column;
         padding-bottom: 100px;
     }
-
+    .project-title
+    {
+        font-size: 1.2em;
+    }
     .project-desc, .project-tile
     {
         width: 100%;
     }
     .project-tile
     {
-        height: 200px;
+        height: 40%;
+    }
+    .project-link
+    {
+        padding: 0.5em;
+        font-size: 0.6em;
+    }
+    .proj-link-container
+    {
+        width: 60%;
+        bottom: 0;
+        padding: 1em;
+    }
+    #contact-text
+    {
+        width: 80%;
+        padding: 1em;
+    }
+
+    #contact-icons
+    {
+        width: 60%;
+        font-size: 1.2em;
+    }
+
+    .footer-text
+    {
+        font-size: 0.7em;
+        font-weight: bolder;
+    }
+
+    .footer-box
+    {
+        left: 10%;
     }
 }
