@@ -79,11 +79,22 @@ body
 }
 .skill-tile:hover .bg-text
 {
-    font-size: 100px;
-    opacity: 0.7;
+    font-size: 80px;
+    opacity: 0.4;
     transition: 0.8s;
 }
 
+.svg-icon
+{
+    position: relative;
+    top: 10px;
+    margin-bottom: 5px;
+}
+
+.svg-icon-dark
+{
+    fill: white;
+}
 .fa-code
 {
     position: relative;
@@ -168,13 +179,13 @@ body
     justify-content: space-around;
     padding: 1.5em;
     width: 40%;
+    text-transform: uppercase;
 }
-
 a
 {
     text-decoration: none;
     color: black;
-    font-size: 13px;
+    font-size: 12px;
     padding: 1em;
 }
 
@@ -336,11 +347,42 @@ section
     text-transform: capitalize;
 }
 
+#welcome-inner-box
+{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding: 6em;
+    align-items: flex-start;
+}
+
+.hire-btn
+{
+    background-color: black;
+    border: 1px solid white;
+    padding: 0.8em;
+    color: white ;
+    font-size: 15px;
+    font-weight: bolder;
+    width: 12%;
+
+}
+
+.hire-btn-dark
+{
+    background-color: $lighter;
+    border: 1px solid $x-dark;
+    padding: 0.8em;
+    color: $x-dark;
+    width: 12%;
+    
+}
+
 h1
 {
     font-size: 40px;
-    padding: 2em;
-    width: 40%;
+    width: 100%;
+
 }
 
 /*Styling for about section*/
@@ -598,14 +640,28 @@ video::-webkit-media-controls
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    min-height: 400px;
     padding-bottom: 2em;
-    background-image: url(images/whitecard.jpg);
+    background-image: url(images/whitecard2.jpg);
+}
+
+#contact-card
+{
+    display: flex;
+    flex-direction: column;
+    background-color: $glass;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    padding: 2em;
 }
 
 #contact-text
 {
     text-align: center;
-    width: 50%;
+    width: 80%;
     padding: 1.5em;
 }
 
@@ -614,9 +670,12 @@ video::-webkit-media-controls
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 30%;
+    width: 60%;
 }
-
+.profile-link
+{
+    display: none;
+}
 footer
 {
     background: $lighter;
@@ -766,7 +825,8 @@ other classes overiding the dark mode declarations due to specificity*/
 .contact-dark
 {
     color: $lightest;
-    background-image: url(images/blackcard.jpg);
+    background-image: url(images/blackcard2.jpg);
+    background-size: cover;
 }
 
 .footer-dark
@@ -780,6 +840,18 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         font-size: 1em;
         text-align: center;
+    }
+    .svg-icon
+    {
+        width: 2em;
+        height: 2em;
+        position: relative;
+        top: 0px;
+        margin-bottom: 0px;
+    }
+    .skill-tile:hover .bg-text
+    {
+        font-size: 60px;
     }
     .fa-brands
     {
@@ -799,9 +871,21 @@ other classes overiding the dark mode declarations due to specificity*/
     }
     h1
     {
-        width: 70%;
+        width: 80%;
         padding: 1em;
+        padding-left: 0;
         word-wrap: normal;
+    }
+    #welcome-inner-box
+    {
+        width: 80%;
+        padding: 2em;
+    }
+    .hire-btn
+    {
+        align-self: flex-start;
+        width: 30%;
+        font-size: 1em;
     }
     .inner-title
     {
@@ -869,6 +953,11 @@ other classes overiding the dark mode declarations due to specificity*/
         width: 60%;
         bottom: 0;
         padding: 1em;
+    }
+    #contact-card
+    {
+        width: 70%;
+        margin: 1em;
     }
     #contact-text
     {

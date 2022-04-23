@@ -33,7 +33,9 @@ function darkMode()
   document.getElementById("up-to").classList.toggle("upto-dark");
   document.getElementById("contact").classList.toggle("contact-dark");
   document.getElementById("back-to-top").classList.toggle("back-to-top-dark");
-  document.getElementById("footer").classList.toggle("footer-dark")
+  document.getElementById("footer").classList.toggle("footer-dark");
+  document.getElementById("svg").classList.toggle("svg-icon-dark");
+  document.getElementById("hire").classList.toggle("hire-btn-dark");
 } 
 
 var nickName = document.getElementById("name");
