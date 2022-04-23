@@ -113,7 +113,7 @@ body
 {
     position: relative;
     top: -30%;
-    right: -50%;
+    right: -35%;
     font-size: 50px;
 }
 /*Styling for Navigation Bar*/
@@ -456,7 +456,9 @@ section
     color: white ;
     font-size: 15px;
     font-weight: bolder;
-    width: 30%;
+    margin-top: 2em;
+    width: 40%;
+    text-align: center;
 
 }
 
@@ -745,7 +747,7 @@ video::-webkit-media-controls
     justify-content: space-around;
     align-items: center;
     width: 40%;
-    padding: 2em;
+    padding: 1.5em;
 }
 
 #contact-text
@@ -931,8 +933,10 @@ other classes overiding the dark mode declarations due to specificity*/
 {
     p
     {
-        font-size: 1em;
+        font-size: 0.8em;
         text-align: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     .svg-icon
     {
@@ -952,6 +956,7 @@ other classes overiding the dark mode declarations due to specificity*/
     }
     nav .menu {
         display: flex;
+        left: 1em;
       }
     
       nav ul {
@@ -982,11 +987,11 @@ other classes overiding the dark mode declarations due to specificity*/
 
     #theme
     {
-        left: 12%;
+        left: 20%;
     }
     h1
     {
-        width: 80%;
+        width: 100%;
         padding: 1em;
         padding-left: 0;
         word-wrap: normal;
@@ -999,7 +1004,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .hire-btn
     {
         align-self: flex-start;
-        width: 30%;
+        width: 40%;
         font-size: 1em;
     }
     .inner-title
@@ -1035,7 +1040,10 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         width: 80%;
     }
-
+    .skill-type
+    {
+        margin: 0;
+    }
     .arrow
     {
         display: none;
@@ -1049,6 +1057,10 @@ other classes overiding the dark mode declarations due to specificity*/
     .project-title
     {
         font-size: 1.2em;
+    }
+    .project-desc
+    {
+        margin-bottom: 2em;
     }
     .project-desc, .project-tile
     {
@@ -1071,12 +1083,12 @@ other classes overiding the dark mode declarations due to specificity*/
     }
     #contact-card
     {
-        width: 70%;
+        width: 90%;
         margin: 1em;
     }
     #contact-text
     {
-        width: 80%;
+        width: 100%;
         padding: 1em;
     }
 
