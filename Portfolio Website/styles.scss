@@ -204,6 +204,7 @@ nav ul {
   left: 12.5%;
   width: 50%;
   overflow-y: hidden;
+  overflow-x : hidden ;
   transition: 1s cubic-bezier(.68,-0.55,.27,10.55);
 }
 
@@ -974,7 +975,7 @@ other classes overiding the dark mode declarations due to specificity*/
       }
       nav ul.active {
         --height: calc(
-          (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+          (((var(--padding) * 2) + (15px * 1.5))) * var(--childenNumber)
         );
         transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
 
