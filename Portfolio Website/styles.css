@@ -99,8 +99,6 @@ body {
 
 .fa-code {
   position: relative;
-  top: -30%;
-  right: -35%;
   font-size: 50px;
 }
 
@@ -1082,6 +1080,9 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   nav ul {
     --height: 0px;
+    background-color: rgba(138, 138, 138, 0.123);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1099,9 +1100,6 @@ other classes overiding the dark mode declarations due to specificity*/
     --height: calc(
           (((var(--padding) * 2) + (15px * 1.5))) * var(--childenNumber)
         );
-    background-color: rgba(138, 138, 138, 0.123);
-    -webkit-backdrop-filter: blur(10px);
-            backdrop-filter: blur(10px);
     -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
   }
@@ -1131,6 +1129,7 @@ other classes overiding the dark mode declarations due to specificity*/
   .inner-title {
     font-size: 1.8em;
     text-align: center;
+    padding: 1em;
   }
   #about {
     -webkit-box-orient: vertical;
@@ -1194,7 +1193,7 @@ other classes overiding the dark mode declarations due to specificity*/
     font-size: 0.6em;
   }
   .proj-link-container {
-    width: 60%;
+    width: 100%;
     bottom: 0;
     padding: 1em;
   }

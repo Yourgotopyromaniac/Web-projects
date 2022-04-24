@@ -111,9 +111,7 @@ body
 }
 .fa-code
 {
-    position: relative;
-    top: -30%;
-    right: -35%;
+    position: relative;;
     font-size: 50px;
 }
 /*Styling for Navigation Bar*/
@@ -973,7 +971,8 @@ other classes overiding the dark mode declarations due to specificity*/
     
       nav ul {
         --height: 0px;
-    
+        background-color: $glass;
+        backdrop-filter: blur(10px);
         flex-direction: column;
         position: absolute;
         width: 100%;
@@ -987,8 +986,6 @@ other classes overiding the dark mode declarations due to specificity*/
         --height: calc(
           (((var(--padding) * 2) + (15px * 1.5))) * var(--childenNumber)
         );
-        background-color: $glass;
-        backdrop-filter: blur(10px);
         transition: 0.8s cubic-bezier(.68,-0.55,.27,1.55);
 
       }
@@ -1024,6 +1021,7 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         font-size: 1.8em;
         text-align: center;
+        padding: 1em;
     }
     #about
     {
@@ -1090,7 +1088,7 @@ other classes overiding the dark mode declarations due to specificity*/
     }
     .proj-link-container
     {
-        width: 60%;
+        width: 100%;
         bottom: 0;
         padding: 1em;
     }
