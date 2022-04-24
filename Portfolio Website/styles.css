@@ -1089,7 +1089,7 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   nav ul.active {
     --height: calc(
-          (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childenNumber)
+          (((var(--padding) * 2) + ( 15px * 1.5))) * var(--childenNumber)
         );
     -webkit-transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
