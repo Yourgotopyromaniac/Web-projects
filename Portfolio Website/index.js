@@ -1,5 +1,6 @@
 function darkMode() 
 {
+  document.getElementById("body-light").classList.toggle("body-dark");
   document.getElementById("link1").classList.toggle("link-dark");
   document.getElementById("link2").classList.toggle("link-dark");
   document.getElementById("link3").classList.toggle("link-dark");

@@ -5,6 +5,7 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 :root {
@@ -14,6 +15,7 @@
 
 p {
   font-size: 15px;
+  font-weight: 300;
 }
 
 /*Styling for Custom Scrollbar*/
@@ -64,16 +66,17 @@ html {
 }
 
 body {
-  background: white;
-  font-family: 'Sora','sans-serif';
+  font-family: 'sora','sans-serif';
   padding: 0;
   margin: 0;
+  background-color: whitesmoke;
 }
 
 .bg-text {
   display: block;
   position: absolute;
   color: whitesmoke;
+  font-size: 120px;
   top: 0;
   right: 0;
   opacity: 0;
@@ -81,8 +84,7 @@ body {
 }
 
 .skill-tile:hover .bg-text {
-  font-size: 80px;
-  opacity: 0.4;
+  opacity: 0.5;
   -webkit-transition: 0.8s;
   transition: 0.8s;
 }
@@ -156,18 +158,6 @@ nav:before {
   font-size: 14px;
 }
 
-#names {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 #name {
   position: fixed;
   top: 6%;
@@ -177,6 +167,7 @@ nav:before {
           animation-duration: 1.2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  font-weight: 500;
 }
 
 /*Logo Animation*/
@@ -250,7 +241,7 @@ nav ul li a {
   width: 100%;
   text-transform: uppercase;
   color: #141414;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 /*nav ul li a::after {
@@ -526,11 +517,13 @@ section {
 
 h1 {
   font-size: 40px;
+  font-weight: 500;
   width: 100%;
 }
 
 /*Styling for about section*/
 .about {
+  position: relative;
   background-color: whitesmoke;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,6 +542,7 @@ h1 {
   margin-left: 2em;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  overflow-y: hidden;
   z-index: 3;
 }
 
@@ -608,6 +602,10 @@ h1 {
   padding: 0.5em;
 }
 
+.skill-tile {
+  overflow-y: hidden;
+}
+
 .skill-tile:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -616,6 +614,7 @@ h1 {
 }
 
 .skill1 {
+  position: relative;
   background-color: #cccccc;
   -ms-grid-row: 1;
   -ms-grid-row-span: 4;
@@ -625,6 +624,7 @@ h1 {
 }
 
 .skill2 {
+  position: relative;
   background-color: #9c9c9c;
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -634,6 +634,7 @@ h1 {
 }
 
 .skill3 {
+  position: relative;
   background-color: #e2e2e2;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
@@ -643,6 +644,8 @@ h1 {
 }
 
 .skill4 {
+  position: relative;
+  overflow-y: hidden;
   background-color: #c7c7c7;
   -ms-grid-row: 3;
   -ms-grid-row-span: 2;
@@ -681,6 +684,7 @@ h1 {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  overflow: hidden hidden;
 }
 
 .project-case, .odd {
@@ -825,6 +829,7 @@ video::-webkit-media-controls {
 }
 
 .inner-title {
+  padding: 1em;
   font-size: 36px;
   font-weight: 600;
 }
@@ -869,6 +874,10 @@ video::-webkit-media-controls {
           align-items: center;
   width: 40%;
   padding: 1.5em;
+}
+
+#contact-title {
+  padding: 0;
 }
 
 #contact-text {
@@ -926,6 +935,8 @@ footer {
   bottom: 10%;
   text-decoration: none;
   background: whitesmoke;
+  overflow-y: hidden;
+  overflow-x: hidden;
   border-radius: 50%;
   z-index: 4;
   height: 45px;
@@ -970,6 +981,10 @@ footer {
 /*Dark Mode Classes' Definition*/
 /*WARNING : Leave this section at the bottom of the stylesheet (except media queries) at all times to avoid
 other classes overiding the dark mode declarations due to specificity*/
+.body-dark {
+  background-color: #141414;
+}
+
 .link-dark {
   color: white;
 }
@@ -1053,6 +1068,11 @@ other classes overiding the dark mode declarations due to specificity*/
 }
 
 @media screen and (max-width: 900px) {
+  *,
+  *::after,
+  *::before {
+    overflow-x: unset;
+  }
   p {
     font-size: 0.8em;
     text-align: center;
@@ -1129,7 +1149,6 @@ other classes overiding the dark mode declarations due to specificity*/
   .inner-title {
     font-size: 1.8em;
     text-align: center;
-    padding: 1em;
   }
   #about {
     -webkit-box-orient: vertical;
