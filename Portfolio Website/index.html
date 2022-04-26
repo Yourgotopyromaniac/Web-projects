@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
@@ -268,59 +270,15 @@
 </footer>
 
 
- <!--BACT TO TOP BUTTON-->   
+ <!--BACK TO TOP BUTTON-->   
     <a id="back-to-top" href="#welcome-section">
         <i class="fa-solid fa-arrow-up"></i>
         <span>Back to top</span>
     </a> 
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-
-<script type="text/javascript">
-
-    gsap.timeline({
-
-        scrollTrigger: {
-            trigger: ".about",
-            start: "center center",
-            end: "bottom center",
-            scrub: true,
-            markers : false,
-            pin : true
-        }
-    })
-    .from(".skill1", {x: innerWidth * 1})
-    .from(".skill2", {x: innerWidth * 1})
-    .from(".skill3", {x: innerWidth * 1})
-    .from(".skill4", {x: innerWidth * 1})
-
-    gsap.timeline({
-
-    scrollTrigger: {
-    trigger: ".hero",
-    start: "+=200px",
-    end: "+=300px",
-    scrub: true
-}
-})
-.to(".hero", {opacity: 0})
-
-const boxes = gsap.utils.toArray('.project-case');
-
-boxes.forEach((box, i) => {
-  const anim = gsap.fromTo(box, {autoAlpha: 0, y: 50}, {duration: 1, autoAlpha: 1, y: 0});
-  ScrollTrigger.create({
-    trigger: box,
-    animation: anim,
-    toggleActions: 'play none none none',
-    once: true,
-  });
-});
-
-</script>
 </body>
 </html>
 
 <script src="index.js"></script>
+<script src="sTrigger.js"></script>
