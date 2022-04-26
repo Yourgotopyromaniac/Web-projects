@@ -8,11 +8,6 @@
   overflow-x: hidden;
 }
 
-:root {
-  --main-clr: rgb(124, 124, 124);
-  --nav-shadow: 0px 3px var(--main-clr);
-}
-
 p {
   font-size: 15px;
   font-weight: 300;
@@ -244,21 +239,6 @@ nav ul li a {
   font-weight: 400;
 }
 
-/*nav ul li a::after {
-  content: "";
-  width: 0%;
-  height: 1.7px;
-  border-radius: 99px;
-  background: var(--main-clr);
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 0.3s ease;
-}
-
-nav ul li a:hover::after {
-  width: 100%;
-}*/
 nav .menu {
   width: 22px;
   height: 16px;
@@ -468,7 +448,7 @@ input:checked + .slider:before {
 section {
   height: 100vh;
   width: 100%;
-  background-image: url(https://www.superiorwallpapers.com/images/lthumbs/2019-12/12984_White-nature-and-one-single-tree-HD-wallpaper.jpg);
+  background-image: url(images/whitebanner.jpg);
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -499,7 +479,7 @@ section {
 
 .hire-btn {
   background-color: black;
-  border: 1px solid white;
+  border: 1px solid rgba(138, 138, 138, 0.123);
   padding: 1em;
   color: white;
   font-size: 15px;
@@ -511,7 +491,7 @@ section {
 
 .hire-btn-dark {
   background-color: #f0f0f0;
-  border: 1px solid #141414;
+  border: 1px solid rgba(138, 138, 138, 0.123);
   color: #141414;
 }
 
@@ -978,7 +958,7 @@ footer {
   bottom: 5px;
 }
 
-#back-to-top span:hover {
+#back-to-top:hover span {
   color: #949494;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
