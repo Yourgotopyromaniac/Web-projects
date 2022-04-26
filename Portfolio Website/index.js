@@ -1,3 +1,13 @@
+const text =  baffle("#welcome-text");
+text.set({
+  characters: '░▒░/░██░>████▓ █ ░██ ██░░ █▒ ▓██░ ░',
+        speed: 200
+});
+
+text.start();
+text.reveal(2000);
+
+
 function darkMode() 
 {
   document.getElementById("body-light").classList.toggle("body-dark");
@@ -40,6 +50,8 @@ function darkMode()
   document.getElementById("bar1").classList.toggle("span-dark");
   document.getElementById("bar2").classList.toggle("span-dark");
   document.getElementById("bar3").classList.toggle("span-dark");
+  document.getElementById("footer-link1").classList.toggle("link-dark");
+  document.getElementById("footer-link2").classList.toggle("link-dark");
 } 
 
 var nickName = document.getElementById("name");
