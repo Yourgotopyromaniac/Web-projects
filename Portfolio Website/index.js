@@ -24,6 +24,7 @@ function darkMode()
   document.getElementById("skill2").classList.toggle("skill2-dark");
   document.getElementById("skill3").classList.toggle("skill3-dark");
   document.getElementById("skill4").classList.toggle("skill4-dark");
+  document.getElementById("skill5").classList.toggle("skill5-dark");
   document.getElementById("logo").classList.toggle("logo-dark");
   document.getElementById("projects").classList.toggle("project-box-dark");
   document.getElementById("project1").classList.toggle("project-tile-dark");

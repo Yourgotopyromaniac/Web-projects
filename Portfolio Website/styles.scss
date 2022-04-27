@@ -18,6 +18,11 @@ $glass: rgba(138, 138, 138, 0.123);
   overflow-x: hidden;
 }
 
+::selection
+{
+    color: white;
+    background: rgb(255, 0, 0);
+}
 
 p{
     font-size: 15px;
@@ -416,7 +421,7 @@ border-radius: 50%;
     
 
 /*Styling For Welcome Section/Banner*/
-section
+.hero
 {
     height: 100vh;
     width: 100%;
@@ -475,36 +480,40 @@ h1
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 700px;
+    height: 120vh;
+    padding-bottom: 2em;
+    overflow-y: hidden;
     
 }
 
 #about-text
 {
     padding: 2em;
+    padding-top: 0;
+    position: relative;
     width: 50%;
-    margin-left: 2em;
+    margin-left: 1em;
     align-self: flex-start;
     overflow-y: hidden;
     z-index: 3;
 }
-.arrow
+.about-me
 {
-    transform: rotate(220deg);
-    font-size: 12em;
-    position: relative;
-    left: 60%;
-    z-index: 3;
-    
+    font-weight: 300;
+    padding-left: 2em;
+    padding-bottom: 1em;
 }
+
 #about-skills
 {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
     width: 50%;
+    height: 100%;
     z-index: 3;
 }
 #about-skills h2
@@ -516,7 +525,7 @@ h1
 #skills
 {
     width: 90%;
-    height: 250px;
+    height: 70%;
     padding-bottom: 2em;
     position: relative;
     display: grid;
@@ -552,7 +561,7 @@ h1
 {
     position: relative;
     background-color: rgb(226, 226, 226);
-    grid-area: 3 / 3 / 5 / 4;
+    grid-area: 3 / 3 / 4 / 4;
 }
 
 .skill4
@@ -560,8 +569,17 @@ h1
     position: relative;
     overflow-y: hidden;
     background-color: rgb(199, 199, 199);
-    grid-area: 3 / 4 / 5 / 5;
+    grid-area: 3 / 4 / 4 / 5;
 }
+
+
+.skill5 
+{
+    position: relative;
+    background-color: rgb(156, 156, 156);
+    grid-area: 4 / 3 / 5 / 5;
+}
+
 
 .skill-type
 {
@@ -730,6 +748,7 @@ video::-webkit-media-controls
     justify-content: space-around;
     align-items: center;
     width: 100%;
+    height: 100vh;
     min-height: 400px;
     padding-bottom: 2em;
     background-image: url(images/whitecard2.jpg);
@@ -744,8 +763,9 @@ video::-webkit-media-controls
     border-radius: 10px;
     justify-content: space-around;
     align-items: center;
-    width: 40%;
-    padding: 1.5em;
+    width: 60%;
+    height: 80%;
+    padding: 1em;
 }
 #contact-title
 {
@@ -857,7 +877,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 .body-dark
 {
-    background-color: $x-dark;
+    background-color: black;
 }
 .link-dark
 {
@@ -907,11 +927,7 @@ other classes overiding the dark mode declarations due to specificity*/
 }
 .skill5-dark
 {
-    background-color: $base-dark;
-}
-.skill6-dark
-{
-    background-color: $darker;
+    background-color: rgb(82, 82, 82);
 }
 .project-box-dark
 {
@@ -1057,9 +1073,14 @@ other classes overiding the dark mode declarations due to specificity*/
     #about-text
     {
         padding: 1em;
+        top: 0;
         margin-left: 0;
         align-self: center;
         width: 80%;
+    }
+    .about-me
+    {
+        padding-left: 0;
     }
     #about-skills h2
     {
@@ -1069,6 +1090,7 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         align-self: center;
         width: 100%;
+        top: 0;
     }
 
     #skills

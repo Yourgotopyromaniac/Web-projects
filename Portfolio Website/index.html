@@ -7,13 +7,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/2c69f58432.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
     <title>callmebiola</title>
 </head>
 <body id="body-light">
@@ -67,20 +67,39 @@
             </section>
 
 <!--ABOUT SECTION-->
-            <div id="about" class="about">
+            <section id="about" class="about">
                 <div id="about-text">
                     <h2 class="inner-title">About Me</h2>
-                    <p>
-                        placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                        placeholder placeholder, placeholder below. placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                        placeholder placeholder, placeholder below. placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                        placeholder placeholder, placeholder below.
+                    <p class="about-me">
+                            Hi, I'm Awoyemi Abiola, A 21 Year old Front-end Developer, with two years experience
+                        building aesthetic and user-friendly interfaces by utilizing web technologies such as HTML5, CSS3
+                        and Javascript, as well as web development tools and libraries like Git, SASS/SCSS and GSAP.
+                            <br><br>
+                            My Core Strengths as a Front-end Developer are Dedication to my work, Creativity and a 
+                        near-obsessive attention to detail.
+                            <br><br>
+                            I Currently aim to achieve highest level attainable as a Front-end
+                        developer, getting a Practical Knowledge of API's and picking up useful Javascript Frameworks are the next steps
+                        for me in this Journey.
+                        <br><br>
+                            When I'm not developing websites and Applications, I'm Either talking to friends, playing Games,
+                        or attempting to break the world record for the fastest time to solve a rubik's cube.
                     </p>
-
+                    
+                    <h2 class="inner-title">Bringing Ideas To Life</h2>
+                    <p class="about-me">
+                        Of all my core strengths, I Consider Creativity to be my Strongest Suit. There is a popular saying
+                        that gets passed around every now and then in the tech space, that "Developers Can't Design", which is supposed to perpetuate
+                        the notion that Front-end Developers are incapable of creating beatiful interfaces without some sort of reference.
+                        <br><br>
+                        This has always appeared alien to me, Since the only "reference" i have ever had to work with for all of my
+                        personal projects, is an image of what i want in my head, an Idea, if you will, which i then build upon till
+                        i have been able to bring this Idea to life. Work with me and let's bring all your ideas to life. 
+                    </p>
                 </div>
                 <div id="about-skills">
                     <h2 class="inner-title">My Skillset</h2>
-                    <div id="skills" >
+                    <div id="skills">
                         <div class="skill-tile skill1" id="skill1"><i class="fg-text fa-brands fa-html5"></i>
                             <h3 class="skill-type">HTML5</h3>
                             <i class="fa-solid fa-code bg-text"></i>
@@ -105,13 +124,16 @@
                             <h5 class="skill-type">SCSS/SASS</h5>
                             <i class="fa-brands fa-sass bg-text"></i>
                         </div>
-                      
+                        <div class= "skill-tile skill5" id="skill5"><i class="fg-text fa-brands fa-git-alt"></i>
+                            <h4 class="skill-type">Git</h4>
+                            <i class="fa-brands fa-git bg-text"></i>
+                        </div>
                     </div>
                 </div> 
-            </div>
+            </section>
 
  <!--PROJECTS SECTION-->           
-            <div id="projects" class="project-box">
+            <section id="projects" class="project-box">
 
                 <h2 id="projects-title"  class="inner-title">Projects</h2>
 
@@ -119,15 +141,17 @@
 
                     <div class="project-case odd">
                         <div class="project-desc">
-                            <h2 class="project-title">Online Store Landing Page</h2>
-                            <p class="project-info">placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                            placeholder placeholder, placeholder below. placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                            placeholder placeholder, placeholder below.
+                            <h2 class="project-title">3Buy3 - Speedcube Store Landing Page</h2>
+                            <p class="project-info"> This is a fully responsive landing page for a speedcube online Store, Complete with a 
+                                hero section, a grid section consisting of items available for purchase, embedded tutorial videos, and a newsletter form.
+                                <br><br>
+                                I built this as a side project after taking a course on responsive web design and was able to apply my knowledge on CSS Grids, Flexbox and
+                                Site Responsiveness. A fully functional carting feauture with Javascript (and and a corresponding page) is currently in development.
                             <br>
                             <br>
                             Hover on desktop, Tap on Mobile to play Demo
                             </p>
-                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-js"></i></h4>
+                            <h4 class="built-with">Built with <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i></h4>
                         </div>
                         
                         <div id="project1" class="project-tile">
@@ -145,10 +169,11 @@
                     </div>
                     <div class="project-case even">
                         <div class="project-desc">
-                            <h2 class="project-title">Video Games' Review Multi-page Website</h2>
-                            <p class="project-info">placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                            placeholder placeholder, placeholder below. placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                            placeholder placeholder, placeholder below.
+                            <h2 class="project-title">Haven - Video Games' Review Website</h2>
+                            <p class="project-info">Haven is a fully responsive Video Game Review Multi-Page Website. This was the first major personal project
+                                I worked on after i started learning Front-end development in 2020.
+                                <br><br>
+                                I was able to apply my knowledge on the basics of HTML and CSS, CSS Properties and Values, pseudo-elements (You can tell from the demo I had a lot of fun using the ::hover CSS pseudo element), webpage structuring, as well as site responsiveness with the use of CSS media queries.
                             <br>
                             <br>
                             Hover on desktop, Tap on Mobile to play Demo
@@ -224,9 +249,13 @@
                     <div class="project-case odd">
                         <div class="project-desc">
                             <h2 class="project-title">Google Homepage Clone</h2>
-                            <p class="project-info">placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                            placeholder placeholder, placeholder below. placeholder placeholder placeholder, place hold er, pla ceholder, and plac eholdering.
-                            placeholder placeholder, placeholder below.
+                            <p class="project-info">A relatively simple addition to my projects' showcase ; A clone of the Google Search
+                                homepage built as part of a set of tasks in a public Internship i underwent in 2021.
+                                <br><br>
+                                I've added it to my showcase to provide a represention of what i described earlier as a "near-obsessive"
+                                attention to detail. The clone is nothing short of pixel-perfection when compared to the original. I don't need 
+                                a design to build beautiful interfaces, but I believe this shows I'm capable of deleivering every detail down to the 
+                                last pixel if i ever have to convert one.
                             <br>
                             <br>
                             Hover on desktop, Tap on Mobile to play Demo
@@ -250,10 +279,10 @@
 
                 </div>
 
-            </div>
+            </section>
 
 <!--UPTO SECTION-->            
-            <div id="up-to" class="upto-box">
+            <section id="up-to" class="upto-box">
                 <div class="inner-div">
                     <h2 class="inner-title">What am i up to ?</h2>
                     <p>
@@ -262,10 +291,10 @@
                             placeholder placeholder, placeholder below.
                     </p>
                 </div>
-            </div>
+            </section>
 
 <!--CONTACT SECTION-->
-            <div id="contact" class="contact-box">
+            <section id="contact" class="contact-box">
                 <div id="contact-card">
                     <div id="contact-text">
                         <h2 id="contact-title" class="inner-title" >Contact Me</h2>  
@@ -283,7 +312,7 @@
                 </div>
 
 
-            </div>
+            </section>
         
 </main>
 
@@ -311,3 +340,4 @@
 
 <script src="index.js"></script>
 <script src="sTrigger.js"></script>
+

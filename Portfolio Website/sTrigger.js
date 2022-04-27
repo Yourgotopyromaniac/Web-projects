@@ -10,7 +10,7 @@ ScrollTrigger.matchMedia(
             scrollTrigger: 
             {
                 trigger: ".about",
-                start: "center center",
+                start: "+=0px",
                 end: "bottom center",
                 scrub: true,
                 markers : false,
@@ -21,6 +21,8 @@ ScrollTrigger.matchMedia(
         tl1.from(".skill2", {x: innerWidth * 1})
         tl1.from(".skill3", {x: innerWidth * 1})
         tl1.from(".skill4", {x: innerWidth * 1})
+        tl1.from(".skill5", {x: innerWidth * 1})
+
 
         
     },
