@@ -42,7 +42,6 @@ function darkMode()
   document.getElementById("proj-link8").classList.toggle("proj-link-dark");
   document.getElementById("proj-link9").classList.toggle("proj-link-dark");
   document.getElementById("proj-link10").classList.toggle("proj-link-dark");
-  document.getElementById("up-to").classList.toggle("upto-dark");
   document.getElementById("contact").classList.toggle("contact-dark");
   document.getElementById("back-to-top").classList.toggle("back-to-top-dark");
   document.getElementById("footer").classList.toggle("footer-dark");

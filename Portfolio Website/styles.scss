@@ -15,7 +15,7 @@ $glass: rgba(138, 138, 138, 0.123);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  
 }
 
 ::selection
@@ -491,6 +491,7 @@ h1
     height: 120vh;
     padding-bottom: 2em;
     overflow-y: hidden;
+    overflow-x: hidden;
     
 }
 
@@ -617,6 +618,7 @@ h1
 .project-case, .odd
 {
     display: flex;
+    height: 100vh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -663,6 +665,15 @@ h4 i
 .proj-demo
 {
     width: 100%;
+}
+
+.proj-number
+{
+    font-size: 25em;
+    position: absolute;
+    top: 0;
+    color: rgba(141,141,141, 0.6);
+    opacity: 0.2;
 }
 .video
 {
