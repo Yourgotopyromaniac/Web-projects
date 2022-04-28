@@ -10,12 +10,18 @@
 
 ::-moz-selection {
   color: white;
-  background: red;
+  background: #a7a7a7;
 }
 
 ::selection {
   color: white;
-  background: red;
+  background: #a7a7a7;
+}
+
+.faux-top {
+  position: absolute;
+  top: -10vh;
+  opacity: 0;
 }
 
 p {
@@ -470,6 +476,7 @@ input:checked + .slider:before {
       -ms-flex-pack: start;
           justify-content: flex-start;
   text-transform: capitalize;
+  overflow-y: hidden;
 }
 
 #welcome-inner-box {
@@ -480,7 +487,7 @@ input:checked + .slider:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 40%;
+  width: 50%;
   padding: 6em;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -507,7 +514,7 @@ input:checked + .slider:before {
 
 h1 {
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 550;
   width: 100%;
 }
 
@@ -577,7 +584,7 @@ h1 {
 
 #skills {
   width: 90%;
-  height: 70%;
+  height: 60%;
   padding-bottom: 2em;
   position: relative;
   display: -ms-grid;
@@ -717,6 +724,7 @@ h1 {
 }
 
 .project-info {
+  padding-top: 20px;
   text-align: left;
 }
 
@@ -821,6 +829,7 @@ video::-webkit-media-controls {
 
 /*Styling for upto section*/
 .upto-box {
+  position: relative;
   background-color: #f0f0f0;
   border-top: 1px solid #bebebe;
 }
@@ -837,6 +846,7 @@ video::-webkit-media-controls {
 
 /*Styling for Contact Section*/
 .contact-box {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -845,8 +855,9 @@ video::-webkit-media-controls {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: whitesmoke;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -880,7 +891,7 @@ video::-webkit-media-controls {
 }
 
 #contact-title {
-  padding: 0;
+  padding: 1em;
 }
 
 #contact-text {
@@ -1242,6 +1253,9 @@ other classes overiding the dark mode declarations due to specificity*/
     width: 100%;
     bottom: 0;
     padding: 1em;
+  }
+  .project-info {
+    padding-top: 0;
   }
   #contact-card {
     width: 90%;
