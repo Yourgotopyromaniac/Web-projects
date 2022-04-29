@@ -672,7 +672,7 @@ h4 i
 {
     font-size: 25em;
     position: absolute;
-    top: 0;
+    top: 10%;
     color: rgba(141,141,141, 0.6);
     opacity: 0.2;
 }
@@ -1894,10 +1894,16 @@ other classes overiding the dark mode declarations due to specificity*/
     }
 }
 
-@media only screen and (orientation: landscape) 
+@media (max-width: 900px )and (orientation: landscape) 
 {
+    .hero
+    {
+        height: 120vh;
+    }
     .project-case
     {
-        height: 300vh;
+        height: 330vh;
     }
+
+    
 }
