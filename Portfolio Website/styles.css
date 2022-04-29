@@ -9,12 +9,12 @@
 
 ::-moz-selection {
   color: white;
-  background: #a7a7a7;
+  background: red;
 }
 
 ::selection {
   color: white;
-  background: #a7a7a7;
+  background: red;
 }
 
 .faux-top {
@@ -1683,7 +1683,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 @media only screen and (max-width: 380px) {
   .hero {
-    height: 105vh;
+    height: 100vh;
   }
   h1 {
     padding: 0;
@@ -1898,7 +1898,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
   .hero {
-    height: 120vh;
+    height: 100vh;
   }
   .project-case {
     height: 330vh;

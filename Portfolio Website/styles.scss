@@ -21,7 +21,7 @@ $glass: rgba(138, 138, 138, 0.123);
 ::selection
 {
     color: white;
-    background: rgb(167, 167, 167);
+    background: rgb(255, 0, 0);
 }
 
 .faux-top
@@ -1649,7 +1649,7 @@ other classes overiding the dark mode declarations due to specificity*/
 {
     .hero
     {
-        height: 105vh;
+        height: 100vh;
     }
 
     h1
@@ -1898,7 +1898,7 @@ other classes overiding the dark mode declarations due to specificity*/
 {
     .hero
     {
-        height: 120vh;
+        height: 100vh;
     }
     .project-case
     {
