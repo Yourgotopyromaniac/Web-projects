@@ -45,7 +45,7 @@ ScrollTrigger.matchMedia(
     
             boxes.forEach((box, i) => 
             {
-                const anim = gsap.fromTo(box, {autoAlpha: 0, y: 50}, {duration: 1, autoAlpha: 1, y: 0});
+                const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: 1, autoAlpha: 1, y: 0});
     
                 ScrollTrigger.create(
                 {

@@ -1,6 +1,6 @@
 const text =  baffle("#welcome-text");
 text.set({
-  characters: '░▒░/░██░>████▓ █ ░██ ██░░ █▒ ▓██░ ░',
+  characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
         speed: 200
 });
 

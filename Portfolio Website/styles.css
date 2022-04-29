@@ -726,6 +726,7 @@ h1 {
 
 .project-info {
   padding-top: 20px;
+  padding-bottom: 20px;
   text-align: left;
 }
 
@@ -1264,7 +1265,8 @@ other classes overiding the dark mode declarations due to specificity*/
     padding: 1em;
   }
   .project-info {
-    padding-top: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   #contact-card {
     width: 90%;
