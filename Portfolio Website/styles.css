@@ -1101,7 +1101,7 @@ other classes overiding the dark mode declarations due to specificity*/
   background: #1e1e1e;
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 768px) and (min-width: 601px) {
   *,
   *::after,
   *::before {
@@ -1241,7 +1241,11 @@ other classes overiding the dark mode declarations due to specificity*/
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 100px;
+    height: 100vh;
+    padding-bottom: 190px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .project-title {
     font-size: 1.2em;
@@ -1253,7 +1257,7 @@ other classes overiding the dark mode declarations due to specificity*/
     width: 100%;
   }
   .project-tile {
-    height: 40%;
+    height: 52.5%;
   }
   .project-link {
     padding: 0.5em;
@@ -1263,6 +1267,9 @@ other classes overiding the dark mode declarations due to specificity*/
     width: 100%;
     bottom: 0;
     padding: 1em;
+  }
+  .proj-number {
+    top: -5%;
   }
   .project-info {
     padding-top: 10px;
@@ -1283,6 +1290,615 @@ other classes overiding the dark mode declarations due to specificity*/
   .footer-text {
     font-size: 0.7em;
     font-weight: bolder;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  *,
+  *::after,
+  *::before {
+    overflow-x: unset;
+  }
+  .bg-text {
+    font-size: 60px;
+  }
+  p {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .svg-icon {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    top: 0px;
+  }
+  .fa-brands {
+    font-size: 1.5em;
+  }
+  .fa-sass, .fa-css3 {
+    font-size: 30px;
+  }
+  .fg-text {
+    font-size: 36px;
+  }
+  nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 1em;
+  }
+  nav ul {
+    --height: 0px;
+    background-color: rgba(138, 138, 138, 0.123);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    height: var(--height);
+    -webkit-transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: 2;
+  }
+  nav ul.active {
+    --height: calc(
+          (((var(--padding) * 2) + (15px * 1.5))) * var(--childenNumber)
+        );
+    -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  #theme {
+    left: 20%;
+  }
+  h1 {
+    width: 100%;
+    padding: 1em;
+    padding-left: 0;
+    word-wrap: normal;
+  }
+  #welcome-inner-box {
+    width: 100%;
+    padding: 2em;
+  }
+  .hire-btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 40%;
+    font-size: 1em;
+  }
+  .inner-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: unset;
+  }
+  #about-text {
+    padding: 1em;
+    top: 0;
+    margin-left: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80%;
+  }
+  .about-me {
+    padding-left: 0;
+  }
+  #about-skills h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #about-skills {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+    top: 0;
+  }
+  #skills {
+    width: 80%;
+  }
+  .skill-type {
+    margin: 0;
+    font-size: 0.6em;
+  }
+  .skill-tile {
+    overflow-x: hidden;
+  }
+  .project-case {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 100px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-desc {
+    margin-bottom: 2em;
+  }
+  .project-desc, .project-tile {
+    width: 100%;
+  }
+  .project-tile {
+    height: 31%;
+  }
+  .project-link {
+    padding: 0.5em;
+    font-size: 0.6em;
+  }
+  .proj-link-container {
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+  }
+  .proj-number {
+    top: 0%;
+  }
+  .project-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #contact-card {
+    width: 90%;
+    margin: 1em;
+  }
+  #contact-text {
+    width: 100%;
+    padding: 1em;
+  }
+  #contact-icons {
+    width: 60%;
+    font-size: 1.2em;
+  }
+  .footer-text {
+    font-size: 0.7em;
+    font-weight: bolder;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+  *,
+  *::after,
+  *::before {
+    overflow-x: unset;
+  }
+  .bg-text {
+    font-size: 60px;
+  }
+  p {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .svg-icon {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    top: 0px;
+  }
+  .fa-brands {
+    font-size: 1.5em;
+  }
+  .fa-sass, .fa-css3 {
+    font-size: 30px;
+  }
+  .fg-text {
+    font-size: 36px;
+  }
+  nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 1em;
+  }
+  nav ul {
+    --height: 0px;
+    background-color: rgba(138, 138, 138, 0.123);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    height: var(--height);
+    -webkit-transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: 2;
+  }
+  nav ul.active {
+    --height: calc(
+          (((var(--padding) * 2) + (15px * 1.5))) * var(--childenNumber)
+        );
+    -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  #theme {
+    left: 20%;
+  }
+  h1 {
+    width: 100%;
+    padding: 1em;
+    padding-left: 0;
+    word-wrap: normal;
+  }
+  #welcome-inner-box {
+    width: 100%;
+    padding: 2em;
+  }
+  .hire-btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 40%;
+    font-size: 1em;
+  }
+  .inner-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: unset;
+  }
+  #about-text {
+    padding: 1em;
+    top: 0;
+    margin-left: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80%;
+  }
+  .about-me {
+    padding-left: 0;
+  }
+  #about-skills h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #about-skills {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+    top: 0;
+  }
+  #skills {
+    width: 80%;
+  }
+  .skill-type {
+    margin: 0;
+    font-size: 0.6em;
+  }
+  .skill-tile {
+    overflow-x: hidden;
+  }
+  .project-case {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-desc {
+    margin-bottom: 2em;
+  }
+  .project-desc, .project-tile {
+    width: 100%;
+  }
+  .project-tile {
+    height: 52.5%;
+  }
+  .project-link {
+    padding: 0.5em;
+    font-size: 0.6em;
+  }
+  .proj-link-container {
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+  }
+  .proj-number {
+    top: -5%;
+  }
+  .project-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #contact-card {
+    width: 90%;
+    margin: 1em;
+  }
+  #contact-text {
+    width: 100%;
+    padding: 1em;
+  }
+  #contact-icons {
+    width: 60%;
+    font-size: 1.2em;
+  }
+  .footer-text {
+    font-size: 0.7em;
+    font-weight: bolder;
+  }
+  .about {
+    height: 140vh;
+  }
+  .project-tile {
+    height: 41%;
+  }
+  .proj-link-container {
+    width: 70%;
+  }
+  .proj-number {
+    top: 10%;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero {
+    height: 120vh;
+  }
+  h1 {
+    padding: 0;
+  }
+  .skill-type {
+    font-size: 0.5em;
+  }
+  .project-case {
+    height: 40%;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1024px) {
+  *,
+  *::after,
+  *::before {
+    overflow-x: unset;
+  }
+  .bg-text {
+    font-size: 60px;
+  }
+  p {
+    font-size: 0.8em;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .svg-icon {
+    width: inherit;
+    height: inherit;
+    position: relative;
+    top: 0px;
+  }
+  .fa-brands {
+    font-size: 1.5em;
+  }
+  .fa-sass, .fa-css3 {
+    font-size: 30px;
+  }
+  .fg-text {
+    font-size: 36px;
+  }
+  nav .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 1em;
+  }
+  nav ul {
+    --height: 0px;
+    background-color: rgba(138, 138, 138, 0.123);
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    height: var(--height);
+    -webkit-transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    z-index: 2;
+  }
+  nav ul.active {
+    --height: calc(
+          (((var(--padding) * 2) + (15px * 1.5))) * var(--childenNumber)
+        );
+    -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  }
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  #theme {
+    left: 20%;
+  }
+  h1 {
+    width: 100%;
+    padding: 1em;
+    padding-left: 0;
+    word-wrap: normal;
+  }
+  #welcome-inner-box {
+    width: 100%;
+    padding: 2em;
+  }
+  .hire-btn {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 40%;
+    font-size: 1em;
+  }
+  .inner-title {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  #about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: unset;
+  }
+  #about-text {
+    padding: 1em;
+    top: 0;
+    margin-left: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 80%;
+  }
+  .about-me {
+    padding-left: 0;
+  }
+  #about-skills h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  #about-skills {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+    top: 0;
+  }
+  #skills {
+    width: 80%;
+  }
+  .skill-type {
+    margin: 0;
+    font-size: 0.6em;
+  }
+  .skill-tile {
+    overflow-x: hidden;
+  }
+  .project-case {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .project-title {
+    font-size: 1.2em;
+  }
+  .project-desc {
+    margin-bottom: 2em;
+  }
+  .project-desc, .project-tile {
+    width: 100%;
+  }
+  .project-tile {
+    height: 52.5%;
+  }
+  .project-link {
+    padding: 0.5em;
+    font-size: 0.6em;
+  }
+  .proj-link-container {
+    width: 100%;
+    bottom: 0;
+    padding: 1em;
+  }
+  .proj-number {
+    top: -5%;
+  }
+  .project-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  #contact-card {
+    width: 90%;
+    margin: 1em;
+  }
+  #contact-text {
+    width: 100%;
+    padding: 1em;
+  }
+  #contact-icons {
+    width: 60%;
+    font-size: 1.2em;
+  }
+  .footer-text {
+    font-size: 0.7em;
+    font-weight: bolder;
+  }
+  .about {
+    height: 140vh;
+  }
+  .proj-link-container {
+    width: 70%;
+  }
+  .proj-number {
+    top: 10%;
+  }
+  .project-tile {
+    height: 47%;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  .project-case {
+    height: 300vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -3,7 +3,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia(
 {
-    "(min-width: 900px)": () => 
+    "(min-width: 1025px)": () => 
     {
         let tl1 =  gsap.timeline(
         {
@@ -45,7 +45,7 @@ ScrollTrigger.matchMedia(
     
             boxes.forEach((box, i) => 
             {
-                const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: 1, autoAlpha: 1, y: 0});
+                const anim = gsap.fromTo(box, {autoAlpha: 0, y: 100}, {duration: 1.5, autoAlpha: 1, y: 0});
     
                 ScrollTrigger.create(
                 {
