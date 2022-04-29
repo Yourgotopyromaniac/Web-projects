@@ -1361,9 +1361,6 @@ other classes overiding the dark mode declarations due to specificity*/
   #theme {
     left: 20%;
   }
-  .hero {
-    height: 90vh;
-  }
   h1 {
     width: 100%;
     padding: 1em;
@@ -1686,7 +1683,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 @media only screen and (max-width: 380px) {
   .hero {
-    height: 120vh;
+    height: 105vh;
   }
   h1 {
     padding: 0;
@@ -1901,7 +1898,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
   .hero {
-    height: 105vh;
+    height: 120vh;
   }
   .project-case {
     height: 330vh;
