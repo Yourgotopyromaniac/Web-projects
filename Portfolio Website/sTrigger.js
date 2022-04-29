@@ -3,17 +3,17 @@ gsap.registerPlugin(ScrollTrigger);
 
 ScrollTrigger.matchMedia(
 {   
-    "(min-width: 300px)": () => 
+    "(max-width: 1023px)": () => 
     {
         let tl1 =  gsap.timeline(
         {
             scrollTrigger: 
             {
                 trigger: ".about",
-                start: "+=200px",
-                end: "+=600px",
+                start: "center center",
+                end: "center top",
                 scrub: true,
-                markers : true,
+                markers : false,
                 pin : false
             }
         })
@@ -26,7 +26,7 @@ ScrollTrigger.matchMedia(
 
         
     },
-    "(min-width: 1025px)": () => 
+    "(min-width: 1024px)": () => 
     {
         let tl1 =  gsap.timeline(
         {
