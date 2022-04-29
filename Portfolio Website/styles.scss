@@ -990,7 +990,7 @@ other classes overiding the dark mode declarations due to specificity*/
     background: $darkest;
 }
 
-@media (max-width: 768px) and (min-width: 601px)
+@media only screen and (max-width: 768px) and (min-width: 601px)
 {
     
     *,
@@ -1416,7 +1416,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 }
 
-@media (min-width: 769px ) and (max-width: 900px)
+@media only screen and (min-width: 769px ) and (max-width: 900px)
 {
     *,
     *::after,
@@ -1645,7 +1645,7 @@ other classes overiding the dark mode declarations due to specificity*/
     }
 }
 
-@media (max-width: 380px) 
+@media only screen and (max-width: 380px) 
 {
     .hero
     {
@@ -1666,7 +1666,7 @@ other classes overiding the dark mode declarations due to specificity*/
     }
 }
 
-@media (min-width: 901px) and (max-width: 1024px)
+@media only screen and (min-width: 901px) and (max-width: 1024px)
 {
     *,
     *::after,
@@ -1894,11 +1894,11 @@ other classes overiding the dark mode declarations due to specificity*/
     }
 }
 
-@media (max-width: 900px )and (orientation: landscape) 
+@media only screen and (max-width: 900px ) and (orientation: landscape) 
 {
     .hero
     {
-        height: 120vh;
+        height: 110vh;
     }
     .project-case
     {
