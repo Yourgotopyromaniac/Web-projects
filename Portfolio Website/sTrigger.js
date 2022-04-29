@@ -2,7 +2,30 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 ScrollTrigger.matchMedia(
-{
+{   
+    "(min-width: 300px)": () => 
+    {
+        let tl1 =  gsap.timeline(
+        {
+            scrollTrigger: 
+            {
+                trigger: ".about",
+                start: "+=200px",
+                end: "+=600px",
+                scrub: true,
+                markers : true,
+                pin : false
+            }
+        })
+        tl1.from(".skill1", {x: innerWidth * 1})
+        tl1.from(".skill2", {x: innerWidth * 1})
+        tl1.from(".skill3", {x: innerWidth * 1})
+        tl1.from(".skill4", {x: innerWidth * 1})
+        tl1.from(".skill5", {x: innerWidth * 1})
+
+
+        
+    },
     "(min-width: 1025px)": () => 
     {
         let tl1 =  gsap.timeline(
@@ -59,4 +82,5 @@ ScrollTrigger.matchMedia(
     }
     
 })
+
 
