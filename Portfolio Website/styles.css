@@ -1898,7 +1898,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
   .hero {
-    height: 110vh;
+    height: 105vh;
   }
   .project-case {
     height: 330vh;
