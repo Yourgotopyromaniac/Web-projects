@@ -9,12 +9,12 @@
 
 ::-moz-selection {
   color: white;
-  background: red;
+  background: rgba(141, 141, 141, 0.6);
 }
 
 ::selection {
   color: white;
-  background: red;
+  background: rgba(141, 141, 141, 0.6);
 }
 
 .faux-top {
@@ -233,7 +233,7 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  left: 10%;
+  left: 25%;
   width: 50%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -1898,7 +1898,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
 @media only screen and (max-width: 900px) and (orientation: landscape) {
   .hero {
-    height: 100vh;
+    height: 110vh;
   }
   .project-case {
     height: 330vh;
