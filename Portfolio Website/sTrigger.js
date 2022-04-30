@@ -57,7 +57,7 @@ ScrollTrigger.matchMedia(
                 scrollTrigger: 
                 {
                     trigger: ".hero",
-                    start: "+=400px",
+                    start: "+=300px",
                     end: "+=300px",
                     scrub: true
                 }

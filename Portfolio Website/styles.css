@@ -250,8 +250,8 @@ body {
             transform: translateY(0vh);
   }
   100% {
-    -webkit-transform: translateY(-120vh);
-            transform: translateY(-120vh);
+    -webkit-transform: translateY(-150vh);
+            transform: translateY(-150vh);
   }
 }
 
@@ -261,8 +261,8 @@ body {
             transform: translateY(0vh);
   }
   100% {
-    -webkit-transform: translateY(-120vh);
-            transform: translateY(-120vh);
+    -webkit-transform: translateY(-150vh);
+            transform: translateY(-150vh);
   }
 }
 
