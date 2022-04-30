@@ -741,6 +741,7 @@ h1 {
 
 .project-tile {
   width: 40%;
+  min-height: 300px;
   height: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1445,6 +1446,7 @@ other classes overiding the dark mode declarations due to specificity*/
     width: 100%;
   }
   .project-tile {
+    min-height: 230px;
     height: 31%;
   }
   .project-link {
@@ -1892,16 +1894,16 @@ other classes overiding the dark mode declarations due to specificity*/
     top: 10%;
   }
   .project-tile {
-    height: 47%;
+    height: 45%;
   }
 }
 
-@media only screen and (max-width: 900px) and (orientation: landscape) {
+@media only screen and (max-width: 1023px) and (orientation: landscape) {
   .hero {
     height: 110vh;
   }
   .project-case {
-    height: 330vh;
+    height: 315vh;
   }
 }
 /*# sourceMappingURL=styles.css.map */
