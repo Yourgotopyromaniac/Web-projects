@@ -323,8 +323,8 @@ nav:before {
   content: "";
   position: absolute;
   z-index: -1;
+  backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
   top: 0;
   left: 0;
   right: 0;
@@ -1156,20 +1156,21 @@ footer {
   right: 5%;
   bottom: 10%;
   text-decoration: none;
-  background: whitesmoke;
+  background: rgba(138, 138, 138, 0.123);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
   overflow-y: hidden;
   overflow-x: hidden;
   border-radius: 50%;
   z-index: 4;
   height: 45px;
   width: 45px;
-  color: #282828;
+  color: #141414;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
 }
 
 .back-to-top-dark {
-  background: #3c3c3c !important;
   color: whitesmoke !important;
 }
 
@@ -2067,6 +2068,17 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .project-case {
     height: 315vh;
+  }
+}
+
+@supports not ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  nav {
+    background-color: rgba(100, 100, 100, 0.7);
+  }
+  @media only screen and (max-width: 1023px) {
+    nav ul {
+      background-color: rgba(100, 100, 100, 0.7);
+    }
   }
 }
 /*# sourceMappingURL=styles.css.map */
