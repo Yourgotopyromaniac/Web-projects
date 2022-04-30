@@ -5,7 +5,7 @@ text.set({
 });
 
 text.start();
-text.reveal(1500);
+text.reveal(5000);
 
 
 function darkMode() 
@@ -92,3 +92,10 @@ menu.addEventListener("click", () => {
   navigation.classList.toggle("active");
   menu.classList.toggle("active");
 });
+
+function addScroll()
+{
+  document.body.classList.remove("no-scroll")
+}
+
+setTimeout(() => {addScroll();}, 4000);

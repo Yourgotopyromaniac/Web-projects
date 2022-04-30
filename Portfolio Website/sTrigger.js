@@ -57,12 +57,12 @@ ScrollTrigger.matchMedia(
                 scrollTrigger: 
                 {
                     trigger: ".hero",
-                    start: "+=200px",
+                    start: "+=400px",
                     end: "+=300px",
                     scrub: true
                 }
             })
-            tl2.to(".hero", {opacity: 0})
+            tl2.to(".hero", {autoAlpha: 0})
     
             const boxes = gsap.utils.toArray('.project-case');
     
