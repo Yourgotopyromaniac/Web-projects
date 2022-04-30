@@ -246,23 +246,23 @@ body {
 
 @-webkit-keyframes page-loading {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+    -webkit-transform: translateX(-120vw);
+            transform: translateX(-120vw);
   }
 }
 
 @keyframes page-loading {
   0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100vw);
-            transform: translateX(-100vw);
+    -webkit-transform: translateX(-120vw);
+            transform: translateX(-120vw);
   }
 }
 
