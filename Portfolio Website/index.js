@@ -1,12 +1,16 @@
-const text =  baffle("#welcome-text");
-text.set({
-  characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
-        speed: 200
-});
+function baffleText()
+{
+    const text =  baffle("#welcome-text");
+    text.set({
+      characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
+            speed: 200
+    });
 
-text.start();
-text.reveal(4500);
+    text.start();
+    text.reveal(1500);
+}
 
+setTimeout(() => {baffleText();}, 2650);
 
 function darkMode() 
 {
