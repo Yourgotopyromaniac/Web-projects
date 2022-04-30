@@ -110,7 +110,7 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $x-dark;
+    background: $base-light;
     animation-name: page-loading;
     animation-delay: 2s;
     animation-duration: 3s;
@@ -123,12 +123,12 @@ body
 {
     padding: 2em;
     text-transform: uppercase;
-    color: white;
+    color: $base-dark;
 
 }
 .ball
 {
-    background-color: rgb(255, 255, 255);
+    background-color: $x-dark;
     height: 25px;
     width: 25px;
     border-radius: 50%;
