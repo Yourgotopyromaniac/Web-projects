@@ -108,10 +108,10 @@ body {
   background: #141414;
   -webkit-animation-name: page-loading;
           animation-name: page-loading;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -250,8 +250,8 @@ body {
             transform: translateY(0vh);
   }
   100% {
-    -webkit-transform: translateY(-100vh);
-            transform: translateY(-100vh);
+    -webkit-transform: translateY(-120vh);
+            transform: translateY(-120vh);
   }
 }
 
@@ -261,8 +261,8 @@ body {
             transform: translateY(0vh);
   }
   100% {
-    -webkit-transform: translateY(-100vh);
-            transform: translateY(-100vh);
+    -webkit-transform: translateY(-120vh);
+            transform: translateY(-120vh);
   }
 }
 

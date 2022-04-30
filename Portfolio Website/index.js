@@ -98,4 +98,4 @@ function addScroll()
   document.body.classList.remove("no-scroll")
 }
 
-setTimeout(() => {addScroll();}, 4000);
+setTimeout(() => {addScroll();}, 3000);

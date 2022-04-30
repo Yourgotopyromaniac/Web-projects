@@ -112,8 +112,8 @@ body
     align-items: center;
     background: $x-dark;
     animation-name: page-loading;
-    animation-delay: 3s;
-    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-duration: 3s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-iteration-count: 1;
@@ -224,7 +224,7 @@ body
 
     100%
     {
-        transform: translateY(-100vh);
+        transform: translateY(-120vh);
     }
 }
 
