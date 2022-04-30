@@ -5,7 +5,7 @@ text.set({
 });
 
 text.start();
-text.reveal(5000);
+text.reveal(4500);
 
 
 function darkMode() 

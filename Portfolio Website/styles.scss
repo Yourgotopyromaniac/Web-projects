@@ -104,7 +104,7 @@ body
 {
     height: 100vh;
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 100;
     display: flex;
     flex-direction: column;
@@ -787,8 +787,6 @@ h1
 .project-tile
 {
     width: 40%;
-    min-height: 300px;
-    height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -863,6 +861,7 @@ video::-webkit-media-controls
     justify-content: space-around;
     align-self: center;
     align-items: center;
+    padding-top: 1em;
     width: 50%;
 }
 
@@ -1295,10 +1294,7 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         width: 100%;
     }
-    .project-tile
-    {
-        height: 52.5%;
-    }
+
     .project-link
     {
         padding: 0.5em;
@@ -1504,11 +1500,6 @@ other classes overiding the dark mode declarations due to specificity*/
     .project-desc, .project-tile
     {
         width: 100%;
-    }
-    .project-tile
-    {
-        min-height: 230px;
-        height: 31%;
     }
     .project-link
     {
@@ -1716,10 +1707,7 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         width: 100%;
     }
-    .project-tile
-    {
-        height: 52.5%;
-    }
+
     .project-link
     {
         padding: 0.5em;
@@ -1768,10 +1756,6 @@ other classes overiding the dark mode declarations due to specificity*/
         height: 140vh;
     }
 
-    .project-tile
-    {
-        height: 41%;
-    }
 
     .proj-link-container
     {
@@ -1966,10 +1950,7 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         width: 100%;
     }
-    .project-tile
-    {
-        height: 52.5%;
-    }
+
     .project-link
     {
         padding: 0.5em;
@@ -2027,10 +2008,7 @@ other classes overiding the dark mode declarations due to specificity*/
     {
         top: 10%;
     }
-    .project-tile
-    {
-        height: 45%;
-    }
+
 }
 
 @media only screen and (max-width: 1023px ) and (orientation: landscape) 
