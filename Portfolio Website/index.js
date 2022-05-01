@@ -12,6 +12,8 @@ function baffleText()
 
 setTimeout(() => {baffleText();}, 2650);
 
+const switchButton = document.getElementById("d-m-switch");
+
 function darkMode() 
 {
   document.getElementById("body-light").classList.toggle("body-dark");
@@ -55,7 +57,25 @@ function darkMode()
   document.getElementById("bar3").classList.toggle("span-dark");
   document.getElementById("footer-link1").classList.toggle("link-dark");
   document.getElementById("footer-link2").classList.toggle("link-dark");
-} 
+
+  if(document.body.classList.contains("body-dark"))
+  {
+    localStorage.setItem("darkTheme", "enabled");
+  }
+
+  else
+  {
+    localStorage.setItem("darkTheme", "disabled");
+  }
+
+};
+
+  if(localStorage.getItem("darkTheme") == "enabled")
+  {
+    switchButton.setAttribute("checked", "true")
+    darkMode();
+  }
+
 
 var nickName = document.getElementById("name");
 nickName.addEventListener('animationiteration', nameChange);
