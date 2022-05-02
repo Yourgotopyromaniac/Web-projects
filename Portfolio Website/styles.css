@@ -352,6 +352,8 @@ nav:before {
 #logo span {
   position: relative;
   font-size: 14px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #name {
@@ -364,6 +366,8 @@ nav:before {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   font-weight: 500;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 /*Logo Animation*/
@@ -524,6 +528,11 @@ nav .menu.active span:nth-child(2) {
           transform: scale(0.8);
 }
 
+.fa-sun, .fa-moon {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
 .switch {
   position: relative;
   display: inline-block;
@@ -662,6 +671,8 @@ input:checked + .slider:before {
           justify-content: flex-start;
   text-transform: capitalize;
   overflow-y: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 #welcome-inner-box {
@@ -689,6 +700,8 @@ input:checked + .slider:before {
   margin-top: 2em;
   width: 40%;
   text-align: center;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .hire-btn-dark {
@@ -701,6 +714,13 @@ h1 {
   font-size: 40px;
   font-weight: 500;
   width: 100%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+h3 {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 /*Styling for about section*/
@@ -737,6 +757,8 @@ h1 {
   font-weight: 300;
   padding-left: 2em;
   padding-bottom: 1em;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #about-skills {
@@ -766,6 +788,8 @@ h1 {
       align-self: flex-start;
   padding: 1em;
   z-index: 3;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 #skills {
@@ -863,6 +887,8 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   background: #f0f0f0;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 #projects-inner-div {
@@ -941,10 +967,14 @@ h1 {
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
           box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
   z-index: 1;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 h4 i {
   padding: inherit;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .proj-demo {
@@ -956,7 +986,7 @@ h4 i {
   position: absolute;
   top: 10%;
   color: rgba(141, 141, 141, 0.6);
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .video {
@@ -1038,6 +1068,8 @@ video::-webkit-media-controls {
   padding: 1em;
   font-size: 36px;
   font-weight: 600;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 /*Styling for Contact Section*/
@@ -1615,6 +1647,8 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .skill-tile {
     overflow-x: hidden;
+    -webkit-transition: 0.8s ease;
+    transition: 0.8s ease;
   }
   .project-case {
     -webkit-box-orient: vertical;

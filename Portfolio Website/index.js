@@ -3,7 +3,7 @@ function baffleText()
     const text =  baffle("#welcome-text");
     text.set({
       characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
-            speed: 200
+            speed: 100
     });
 
     text.start();

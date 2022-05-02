@@ -306,6 +306,7 @@ nav:before {
 {
     position: relative;
     font-size: 14px;
+    transition: 0.5s ease;
 }
 
 
@@ -318,6 +319,7 @@ nav:before {
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
     font-weight: 500;
+    transition: 0.5s ease;
 }
 
 /*Logo Animation*/
@@ -447,6 +449,11 @@ align-items : center ;
 position: relative;
 transform: scale(0.8);
 } 
+
+.fa-sun, .fa-moon
+{
+    transition: 0.5s ease;
+}
 
 .switch {
 position: relative;
@@ -580,6 +587,7 @@ border-radius: 50%;
     justify-content: flex-start;
     text-transform: capitalize;
     overflow-y: hidden;
+    transition: 0.3s ease;
 }
 
 #welcome-inner-box
@@ -602,6 +610,7 @@ border-radius: 50%;
     margin-top: 2em;
     width: 40%;
     text-align: center;
+    transition: 0.5s ease;
 
 }
 
@@ -618,7 +627,13 @@ h1
     font-size: 40px;
     font-weight: 500;
     width: 100%;
+    transition: 0.5s ease;
 
+}
+
+h3
+{
+    transition: 0.5s ease;
 }
 
 /*Styling for about section*/
@@ -652,6 +667,7 @@ h1
     font-weight: 300;
     padding-left: 2em;
     padding-bottom: 1em;
+    transition: 0.5s ease;
 }
 
 #about-skills
@@ -665,12 +681,14 @@ h1
     width: 50%;
     height: 100%;
     z-index: 3;
+    
 }
 #about-skills h2
 {
     align-self: flex-start;
     padding: 1em;
     z-index: 3;
+    transition: 0.5s ease;
 }
 #skills
 {
@@ -746,6 +764,7 @@ h1
     flex-direction: column;
     align-items: center;
     background:$lighter;
+    transition: 0.4s ease;
 }
 
 #projects-inner-div
@@ -797,11 +816,13 @@ h1
     background-color: $base-light;
     box-shadow: rgba(100,100,111, 0.2) 0 7px 29px 0;
     z-index: 1;
+    transition: 0.5s ease;
 }
 
 h4 i
 {
     padding: inherit;
+    transition: 0.5s ease;
 }
 .proj-demo
 {
@@ -814,7 +835,7 @@ h4 i
     position: absolute;
     top: 10%;
     color: rgba(141,141,141, 0.6);
-    opacity: 0.2;
+    opacity: 0.3;
 }
 .video
 {
@@ -900,6 +921,7 @@ video::-webkit-media-controls
     padding: 1em;
     font-size: 36px;
     font-weight: 600;
+    transition: 0.5s ease;
 }
 
 /*Styling for Contact Section*/
@@ -1222,6 +1244,7 @@ other classes overiding the dark mode declarations due to specificity*/
         padding-left: 0;
         word-wrap: normal;
     }
+
     #welcome-inner-box
     {
         width: 100%;
@@ -1252,10 +1275,12 @@ other classes overiding the dark mode declarations due to specificity*/
         margin-left: 0;
         align-self: center;
         width: 80%;
+        
     }
     .about-me
     {
         padding-left: 0;
+        
     }
     #about-skills h2
     {
@@ -1493,6 +1518,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .skill-tile
     {
         overflow-x: hidden;
+        transition: 0.8s ease;
     }
 
     .project-case
