@@ -120,7 +120,7 @@ body
     animation-iteration-count: 1;
     overflow-y: hidden;
 }
-#loading-text
+.loading-text
 {
     padding: 2em;
     text-transform: uppercase;
@@ -1130,6 +1130,15 @@ other classes overiding the dark mode declarations due to specificity*/
     background: $darkest;
 }
 
+.loading-text-dark
+{
+    color: $base-light;
+}
+
+.ball-dark
+{
+    background-color: white;
+}
 
 @media only screen and (max-width: 768px) and (min-width: 601px)
 {
@@ -1528,6 +1537,7 @@ other classes overiding the dark mode declarations due to specificity*/
     #contact-card
     {
         width: 90%;
+        height: 60%;
         margin: 1em;
     }
     #contact-text
@@ -2030,13 +2040,20 @@ other classes overiding the dark mode declarations due to specificity*/
 }
 
 
-@supports not (backdrop-filter: blur())
+@supports not (backdrop-filter: blur(10px))
 {
+    #preloader
+    {
+        display: none;
+    }
     nav
     {
-        background-color: rgba(100, 100, 100, 0.7);
+        background-color: $base-light;
     }
-
+    .nav-dark
+    {
+        background-color: $x-dark;
+    }
     @media only screen and (max-width: 1023px)
     {
        nav ul

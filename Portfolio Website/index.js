@@ -17,6 +17,13 @@ const switchButton = document.getElementById("d-m-switch");
 function darkMode() 
 {
   document.getElementById("body-light").classList.toggle("body-dark");
+  document.getElementById("loading-text").classList.toggle("loading-text-dark");
+  document.getElementById("start").classList.toggle("ball-dark");
+  document.getElementById("ball1").classList.toggle("ball-dark");
+  document.getElementById("ball2").classList.toggle("ball-dark");
+  document.getElementById("ball3").classList.toggle("ball-dark");
+  document.getElementById("end").classList.toggle("ball-dark");
+  document.getElementById("navbar").classList.toggle("nav-dark");
   document.getElementById("link1").classList.toggle("link-dark");
   document.getElementById("link2").classList.toggle("link-dark");
   document.getElementById("link4").classList.toggle("link-dark");
