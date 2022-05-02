@@ -110,7 +110,8 @@ body
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: $base-light;
+    background: $glass;
+    backdrop-filter: blur(30px);
     animation-name: page-loading;
     animation-delay: 2s;
     animation-duration: 3s;
@@ -2029,7 +2030,7 @@ other classes overiding the dark mode declarations due to specificity*/
 }
 
 
-@supports not (backdrop-filter: blur(10px))
+@supports not (backdrop-filter: blur())
 {
     nav
     {
