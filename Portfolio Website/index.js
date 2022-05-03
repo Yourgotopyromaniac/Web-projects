@@ -1,16 +1,25 @@
 function baffleText()
 {
-    const text =  baffle("#welcome-text");
+    const text =  baffle(".notbold");
     text.set({
       characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
-            speed: 100
+            speed: 300
+    });
+
+    const text2 =  baffle(".boldtext");
+    text.set({
+      characters: '░▒░░██░███▓ █ ░██ ██░░ █▒ ▓██░ ░',
+            speed: 300
     });
 
     text.start();
     text.reveal(1500);
+
+    text2.start();
+    text2.reveal(1500);
 }
 
-setTimeout(() => {baffleText();}, 2650);
+setTimeout(() => {baffleText();}, 4050);
 
 const switchButton = document.getElementById("d-m-switch");
 
@@ -37,6 +46,7 @@ function darkMode()
   document.getElementById("skill3").classList.toggle("skill3-dark");
   document.getElementById("skill4").classList.toggle("skill4-dark");
   document.getElementById("skill5").classList.toggle("skill5-dark");
+  document.getElementById("skill6").classList.toggle("skill6-dark");
   document.getElementById("logo").classList.toggle("logo-dark");
   document.getElementById("projects").classList.toggle("project-box-dark");
   document.getElementById("project1").classList.toggle("project-tile-dark");
@@ -58,6 +68,7 @@ function darkMode()
   document.getElementById("back-to-top").classList.toggle("back-to-top-dark");
   document.getElementById("footer").classList.toggle("footer-dark");
   document.getElementById("svg").classList.toggle("svg-icon-dark");
+  document.getElementById("svg2").classList.toggle("svg-icon-dark");
   document.getElementById("hire").classList.toggle("hire-btn-dark");
   document.getElementById("bar1").classList.toggle("span-dark");
   document.getElementById("bar2").classList.toggle("span-dark");
@@ -129,4 +140,4 @@ function addScroll()
   document.body.classList.remove("no-scroll")
 }
 
-setTimeout(() => {addScroll();}, 3000);
+setTimeout(() => {addScroll();}, 4000);

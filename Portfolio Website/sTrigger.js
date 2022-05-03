@@ -21,6 +21,7 @@ ScrollTrigger.matchMedia(
         tl1.from(".skill2", {x: innerWidth * 1})
         tl1.from(".skill3", {x: innerWidth * 1})
         tl1.from(".skill4", {x: innerWidth * 1})
+        tl1.from(".skill6", {x: innerWidth * 1})
         tl1.from(".skill5", {x: innerWidth * 1})
 
 
@@ -44,6 +45,7 @@ ScrollTrigger.matchMedia(
         tl1.from(".skill2", {x: innerWidth * 1})
         tl1.from(".skill3", {x: innerWidth * 1})
         tl1.from(".skill4", {x: innerWidth * 1})
+        tl1.from(".skill6", {x: innerWidth * 1})
         tl1.from(".skill5", {x: innerWidth * 1})
 
 

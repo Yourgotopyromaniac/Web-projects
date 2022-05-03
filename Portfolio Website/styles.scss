@@ -59,7 +59,7 @@ transition: all 0.4s ease-in-out;
 font-family: 'Material Icons';
 font-weight: normal;
 font-style: normal;
-font-size: 30px; 
+font-size: 20px; 
 display: inline-block;
 line-height: 1;
 text-transform: none;
@@ -113,10 +113,10 @@ body
     background: $glass;
     backdrop-filter: blur(30px);
     animation-name: page-loading;
-    animation-delay: 2s;
+    animation-delay: 4s;
     animation-duration: 3s;
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(.68,-0.55,.27,10.55);
+    animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-iteration-count: 1;
     overflow-y: hidden;
 }
@@ -147,7 +147,7 @@ body
     position: relative;
     animation: cradleStart 1s  forwards;
     animation-timing-function: linear;
-    animation-iteration-count: 5;
+    animation-iteration-count: 10;
 }
 
 #end
@@ -155,7 +155,7 @@ body
     position: relative;
     animation: cradleEnd 1s 0.5s forwards;
     animation-timing-function: linear;
-    animation-iteration-count: 5;
+    animation-iteration-count: 10;
 }
 
 
@@ -220,12 +220,12 @@ body
 {   
     0%
     {
-        transform: translateX(0);
+        transform: translateY(0);
     }
 
     100%
     {
-        transform: translateX(-120vw);
+        transform: translateY(-100vh);
     }
 }
 
@@ -234,11 +234,17 @@ body
     display: block;
     position: absolute;
     color: $base-light;
-    font-size: 120px;
+    font-size: 60px;
     top: 0;
     right: 0;
     opacity: 0;
     z-index: 0;
+}
+
+#nsb
+{
+    font-size: 20px;
+    padding: 0.5em;
 }
 .skill-tile:hover .bg-text
 {
@@ -261,7 +267,7 @@ body
 .fa-code
 {
     position: relative;;
-    font-size: 50px;
+    font-size: 40px;
 }
 /*Styling for Navigation Bar*/
 nav
@@ -625,12 +631,16 @@ border-radius: 50%;
 h1
 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 200;
     width: 100%;
     transition: 0.5s ease;
 
 }
 
+.boldtext
+{
+    font-weight: 600;
+}
 h3
 {
     transition: 0.5s ease;
@@ -716,7 +726,7 @@ h3
 {
     position: relative;
     background-color: rgb(204, 204, 204);
-    grid-area: 1 / 1 / 5 / 3;
+    grid-area: 1 / 1 / 4 / 3;
 }
 .skill2
 {
@@ -748,6 +758,12 @@ h3
     grid-area: 4 / 3 / 5 / 5;
 }
 
+.skill6 
+{
+    position: relative;
+    background-color: rgb(226, 226, 226);
+    grid-area: 4 / 1 / 5 / 3; 
+}
 
 .skill-type
 {
@@ -936,7 +952,7 @@ video::-webkit-media-controls
     width: 100%;
     height: 100vh;
     padding-bottom: 2em;
-    background-image: url(images/whitecard2.jpg);
+    background: $light;
 }
 
 #contact-card
@@ -1114,6 +1130,10 @@ other classes overiding the dark mode declarations due to specificity*/
 {
     background-color: rgb(82, 82, 82);
 }
+.skill6-dark
+{
+    background-color: rgb(51, 51, 51);
+}
 .project-box-dark
 {
     color: $lightest;
@@ -1173,7 +1193,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
     .bg-text
     {
-        font-size: 60px;
+        font-size: 40px;
     }
     p
     {
@@ -1196,7 +1216,7 @@ other classes overiding the dark mode declarations due to specificity*/
     
     .fa-sass, .fa-css3
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .fg-text
     {
@@ -1385,10 +1405,13 @@ other classes overiding the dark mode declarations due to specificity*/
     *::before {
     overflow-x: unset;
     }
-
+    .hero
+    {
+        transition: none;
+    }
     .bg-text
     {
-        font-size: 60px;
+        font-size: 40px;
     }
     p
     {
@@ -1411,7 +1434,7 @@ other classes overiding the dark mode declarations due to specificity*/
     
     .fa-sass, .fa-css3
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .fg-text
     {
@@ -1518,7 +1541,6 @@ other classes overiding the dark mode declarations due to specificity*/
     .skill-tile
     {
         overflow-x: hidden;
-        transition: 0.8s ease;
     }
 
     .project-case
@@ -1596,7 +1618,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
     .bg-text
     {
-        font-size: 60px;
+        font-size: 40px;
     }
     p
     {
@@ -1619,7 +1641,7 @@ other classes overiding the dark mode declarations due to specificity*/
     
     .fa-sass, .fa-css3
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .fg-text
     {
@@ -1839,7 +1861,7 @@ other classes overiding the dark mode declarations due to specificity*/
 
     .bg-text
     {
-        font-size: 60px;
+        font-size: 40px;
     }
     p
     {
@@ -1862,7 +1884,7 @@ other classes overiding the dark mode declarations due to specificity*/
     
     .fa-sass, .fa-css3
     {
-        font-size: 30px;
+        font-size: 20px;
     }
     .fg-text
     {
