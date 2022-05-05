@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Didact Gothic', sans-serif;
   font-weight: bolder;
   scroll-behavior: smooth;
   margin: 0;
@@ -11,12 +11,29 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1dbff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2c1938;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a0033;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
 #nav-bar {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 2;
-  opacity: 0.6;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -30,7 +47,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #2c1938;
+  background-color: rgba(99, 50, 103, 0.24);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   color: white;
 }
 
@@ -47,8 +66,8 @@ i {
 
 #signout {
   background-color: white;
-  color: #2c1938;
-  border-radius: 15px;
+  color: rgba(44, 25, 56, 0.5);
+  border-radius: 10px;
   padding: 0.8em;
   padding-left: 2em;
   padding-right: 2em;
@@ -80,7 +99,7 @@ i:hover, #signout:hover {
   opacity: 1;
 }
 
-.fa-bars {
+#nav-compinfo i {
   display: none;
 }
 
@@ -121,7 +140,7 @@ i:hover, #signout:hover {
 }
 
 #card {
-  background: #f1dbff;
+  background: linear-gradient(135deg, #f8d6ff 0%, #eda3ff 49.21%, #fce4fa 100%);
   color: #2c1938;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -320,7 +339,7 @@ div#comp-stats div h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 210px;
+  height: 240px;
   width: 10%;
   background: white;
   border-radius: 20px;
@@ -352,6 +371,50 @@ div#comp-stats div h2 {
 .discount {
   color: gray;
   padding-right: 10px;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.cart-box {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.cart-add {
+  width: 70%;
+  background-color: #f1dbff;
+  color: #2c1938;
+  padding: 0.9em;
+  border: none;
+  font-size: 10px;
+  text-decoration: none;
+}
+
+.cart-qty {
+  background-color: rgba(233, 233, 233, 0.7);
+  outline: none;
+  border: none;
+  font-size: 10px;
+  width: 70%;
+  height: 30px;
 }
 
 #prod1 {
@@ -446,7 +509,7 @@ div#comp-stats div h2 {
 }
 
 #tutorials {
-  background-color: #2c1938;
+  background: linear-gradient(135deg, #f8d6ff 0%, #eda3ff 49.21%, #fce4fa 100%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,7 +538,7 @@ div#comp-stats div h2 {
 }
 
 #tuttext {
-  color: white;
+  color: #2a0033;
   text-align: left;
   position: relative;
   left: 1em;
@@ -483,7 +546,7 @@ div#comp-stats div h2 {
 
 footer {
   height: 200px;
-  background-color: #f1dbff;
+  background: linear-gradient(135deg, #f8d6ff 0%, #eda3ff 49.21%, #fce4fa 100%);
   color: #2c1938;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -561,7 +624,7 @@ footer {
 
 @media (max-width: 768px) {
   #card {
-    background: #f1dbff;
+    background: linear-gradient(135deg, #f8d6ff 0%, #eda3ff 49.21%, #fce4fa 100%);
     color: #2c1938;
     display: -webkit-box;
     display: -ms-flexbox;
