@@ -13,10 +13,10 @@ function baffleText()
     });
 
     text.start();
-    text.reveal(1500);
+    text.reveal(2500);
 
     text2.start();
-    text2.reveal(1500);
+    text2.reveal(2500);
 }
 
 setTimeout(() => {baffleText();}, 4050);
@@ -35,6 +35,7 @@ function darkMode()
   document.getElementById("navbar").classList.toggle("nav-dark");
   document.getElementById("link1").classList.toggle("link-dark");
   document.getElementById("link2").classList.toggle("link-dark");
+  document.getElementById("link3").classList.toggle("link-dark");
   document.getElementById("link4").classList.toggle("link-dark");
   document.getElementById("welcome-text").classList.toggle("welcome-text-dark");
   document.getElementById("welcome-section").classList.toggle("welcome-dark");
@@ -64,6 +65,15 @@ function darkMode()
   document.getElementById("proj-link8").classList.toggle("proj-link-dark");
   document.getElementById("proj-link9").classList.toggle("proj-link-dark");
   document.getElementById("proj-link10").classList.toggle("proj-link-dark");
+  document.getElementById("uptosection").classList.toggle("upto-dark");
+  document.getElementById("quote-box").classList.toggle("quote-dark");
+  document.getElementById("topic1").classList.toggle("learning-box-dark");
+  document.getElementById("topic2").classList.toggle("learning-box-dark");
+  document.getElementById("topic3").classList.toggle("learning-box-dark");
+  document.getElementById("topic4").classList.toggle("learning-box-dark");
+  document.getElementById("topic5").classList.toggle("learning-box-dark");
+  document.getElementById("topic6").classList.toggle("learning-box-dark");
+  document.getElementById("hourglass").classList.toggle("hourglass-dark");
   document.getElementById("contact").classList.toggle("contact-dark");
   document.getElementById("back-to-top").classList.toggle("back-to-top-dark");
   document.getElementById("footer").classList.toggle("footer-dark");

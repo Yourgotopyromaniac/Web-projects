@@ -24,6 +24,10 @@ $glass: rgba(138, 138, 138, 0.123);
     background: rgba(141,141,141, 0.6);
 }
 
+.easter-egg
+{
+    opacity: 0.02;
+}
 .faux-top
 {
     position: absolute;
@@ -119,6 +123,13 @@ body
     animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-iteration-count: 1;
     overflow-y: hidden;
+}
+.inner-title
+{
+    padding: 1em;
+    font-size: 36px;
+    font-weight: 600;
+    transition: 0.5s ease;
 }
 .loading-text
 {
@@ -366,7 +377,7 @@ nav ul {
   display: flex;
   align-items: center;
   position: relative;
-  left: 25%;
+  left: 15%;
   width: 50%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -920,25 +931,196 @@ video::-webkit-media-controls
 
 /*Styling for upto section*/
 
-.upto-box
+#uptosection
 {
     position: relative;
-    background-color: $lighter;
-    border-top: 1px solid rgb(190, 190, 190);
+    background-color: $base-light;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    transition: 0.4s ease;
 }
-.inner-div
+
+#uptosection h2
 {
+    align-self: flex-start;
+}
+
+.text-box
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.quote
+{
+    align-self: flex-start;
+    background-color: rgb(250,250,250);
+    width: 30%;
+    border-radius: 10px;
+    margin: 2em;
+    transition: 0.4s ease;
+}
+
+
+
+.quote-text
+{
+    font-weight: 300;
+    padding: 2em;  
+}
+
+.upto-text
+{
+    align-self: center;
     padding: 2em;
+    width: 100%;
+    text-align: left;
 }
-
-
-.inner-title
+#learning-topics
 {
-    padding: 1em;
-    font-size: 36px;
-    font-weight: 600;
-    transition: 0.5s ease;
+    width: 100%;
+    height: 250px;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
 }
+
+.learning-text
+{
+    font-weight: 300;
+    padding: 1em;
+    width: 60%;
+}
+
+
+
+.learning-box
+{
+    background-color: rgb(250,250,250);
+    position: relative;
+    width: 15%;
+    border-radius: 5px;
+    box-shadow: rgba(138, 138, 138, 0.2) 0 7px 29px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+    transition: 0.4s ease;
+}
+
+.learning-box:hover
+{
+    transform: scale(1.1);
+    cursor: pointer;
+    
+}
+
+.big-learning
+{
+    width: 20%;
+    height: 100%;
+}
+
+.med-learning
+{
+    height: 80%;
+}
+
+.small-learning
+{
+    height: 60%;
+}
+
+
+
+.completed-content
+{
+    opacity: 0.4;
+}
+
+.fa-circle-check
+{
+    position: absolute;
+    left: 42%;
+    align-self: center;
+    justify-self: center;
+    color: rgba(190, 190, 190, 0.6);
+    z-index: 3;
+    font-size: 36px;
+}
+
+.fa-react
+{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    font-size: 24px;
+}
+
+.undone
+{
+    opacity: 0.3;
+}
+
+
+.smaller-learning
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40%;
+    width: 7%;
+    opacity: 0.4;
+}
+.react-inside
+{
+    position: relative;
+    top: unset;
+    left: unset;
+}
+
+.fa-caret-down
+{
+    position: absolute;
+    top: -15%;
+    left: 48%;
+}
+
+.fa-hourglass
+{
+    font-size: 30px;
+    position: absolute;
+    top: 65%;
+    left: 70%;
+    color: rgba(100, 100, 100, 0.7);
+    animation-name: hourglassRoTaTe ;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite ;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(.68,-0.55,.27,10.55);
+    transition: 0.4s ease;
+
+}
+@keyframes hourglassRoTaTe
+{
+    0%
+    {
+        transform: rotate(0);
+    }
+
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
 
 /*Styling for Contact Section*/
 .contact-box
@@ -1156,9 +1338,31 @@ other classes overiding the dark mode declarations due to specificity*/
 
 .upto-dark
 {
-    color: $lightest;
-    background-color: $darkest;
+    color: $lightest !important;
+    background-color: $x-dark !important;
 }
+
+.quote-dark
+{
+    color: $lighter;
+    background-color: $base-dark;
+}
+
+.learning-box-dark
+{
+    background-color: $darker;
+    box-shadow:
+		0px 24px 38px 3px hsla(0,0%,0%,0.14), 
+		0px 9px 46px 8px hsla(0,0%,0%,0.12), 
+		0px 11px 15px -7px hsla(0,0%,0%,0.2);
+    color: white;
+}
+
+.hourglass-dark
+{
+    color: rgba(255, 255, 255, 0.856);
+}
+
 .contact-dark
 {
     color: $lightest;
@@ -1300,6 +1504,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .about-me
     {
         padding-left: 0;
+        text-align: left;
         
     }
     #about-skills h2
@@ -1373,6 +1578,19 @@ other classes overiding the dark mode declarations due to specificity*/
         padding-top: 10px;
         padding-bottom: 10px;
     }
+
+    .quote
+    {
+        width: 40%;
+        align-items: center;
+    }
+
+    .learning-text
+    {
+        font-weight: 400;
+        font-size: 0.7em;
+    }
+
     #contact-card
     {
         width: 90%;
@@ -1516,6 +1734,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .about-me
     {
         padding-left: 0;
+        text-align: left;
     }
     #about-skills h2
     {
@@ -1582,6 +1801,59 @@ other classes overiding the dark mode declarations due to specificity*/
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    #uptosection h2
+    {
+        align-self: center;
+    }
+    .quote
+    {
+        width: 80%;
+        align-items: center;
+    }
+    #learning-topics
+    {
+        flex-direction: column;
+        width: 100%;
+        height: 150vh;
+        align-items: flex-start;
+        justify-content: space-around;
+
+    }
+
+    .fa-caret-down
+    {
+        position: absolute;
+        top:  48%;
+        left: 105%;
+        transform: rotate(90deg);
+    }
+
+    .learning-box
+    {
+        width: unset;
+        height: 12.5%;
+    }
+    .smaller-learning
+    {
+        width: 25%;
+        height: 8%;
+    }
+    .small-learning
+    {
+        width: 45% ;
+    }
+
+    .med-learning
+    {
+        width: 70%;
+    }
+
+    .big-learning
+    {
+        width: 90%;
+        height: 15%;
+    }
+
     #contact-card
     {
         width: 90%;
@@ -1723,6 +1995,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .about-me
     {
         padding-left: 0;
+        text-align: left;
     }
     #about-skills h2
     {
@@ -1790,6 +2063,16 @@ other classes overiding the dark mode declarations due to specificity*/
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    .quote
+    {
+        width: 40%;
+        align-items: center;
+    }
+    .learning-text
+    {
+        font-weight: 400;
+        font-size: 0.7em;
+    }
     #contact-card
     {
         width: 90%;
@@ -1848,6 +2131,12 @@ other classes overiding the dark mode declarations due to specificity*/
     .project-case
     {
         height: 40%;
+    }
+
+    .learning-text
+    {
+        font-weight: 400;
+        font-size: 0.7em;
     }
 }
 
@@ -1961,11 +2250,13 @@ other classes overiding the dark mode declarations due to specificity*/
         top: 0;
         margin-left: 0;
         align-self: center;
+        height: 130vh;
         width: 80%;
     }
     .about-me
     {
         padding-left: 0;
+        text-align: left;
     }
     #about-skills h2
     {
@@ -1996,7 +2287,7 @@ other classes overiding the dark mode declarations due to specificity*/
     .project-case
     {
         flex-direction: column;
-        height: 100vh;
+        height: 150vh;
         justify-content: space-evenly;
     }
 

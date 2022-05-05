@@ -17,6 +17,10 @@
   background: rgba(141, 141, 141, 0.6);
 }
 
+.easter-egg {
+  opacity: 0.02;
+}
+
 .faux-top {
   position: absolute;
   top: -10vh;
@@ -121,6 +125,14 @@ body {
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   overflow-y: hidden;
+}
+
+.inner-title {
+  padding: 1em;
+  font-size: 36px;
+  font-weight: 600;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .loading-text {
@@ -428,7 +440,7 @@ nav ul {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  left: 25%;
+  left: 15%;
   width: 50%;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -1073,22 +1085,224 @@ video::-webkit-media-controls {
 }
 
 /*Styling for upto section*/
-.upto-box {
+#uptosection {
   position: relative;
-  background-color: #f0f0f0;
-  border-top: 1px solid #bebebe;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
-.inner-div {
+#uptosection h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.text-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+}
+
+.quote {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  background-color: #fafafa;
+  width: 30%;
+  border-radius: 10px;
+  margin: 2em;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.quote-text {
+  font-weight: 300;
   padding: 2em;
 }
 
-.inner-title {
+.upto-text {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 2em;
+  width: 100%;
+  text-align: left;
+}
+
+#learning-topics {
+  width: 100%;
+  height: 250px;
+  padding: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.learning-text {
+  font-weight: 300;
   padding: 1em;
+  width: 60%;
+}
+
+.learning-box {
+  background-color: #fafafa;
+  position: relative;
+  width: 15%;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(138, 138, 138, 0.2) 0 7px 29px 0;
+          box-shadow: rgba(138, 138, 138, 0.2) 0 7px 29px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  z-index: 1;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.learning-box:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.big-learning {
+  width: 20%;
+  height: 100%;
+}
+
+.med-learning {
+  height: 80%;
+}
+
+.small-learning {
+  height: 60%;
+}
+
+.completed-content {
+  opacity: 0.4;
+}
+
+.fa-circle-check {
+  position: absolute;
+  left: 42%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: rgba(190, 190, 190, 0.6);
+  z-index: 3;
   font-size: 36px;
-  font-weight: 600;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
+}
+
+.fa-react {
+  position: absolute;
+  top: 5%;
+  left: 70%;
+  font-size: 24px;
+}
+
+.undone {
+  opacity: 0.3;
+}
+
+.smaller-learning {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 40%;
+  width: 7%;
+  opacity: 0.4;
+}
+
+.react-inside {
+  position: relative;
+  top: unset;
+  left: unset;
+}
+
+.fa-caret-down {
+  position: absolute;
+  top: -15%;
+  left: 48%;
+}
+
+.fa-hourglass {
+  font-size: 30px;
+  position: absolute;
+  top: 65%;
+  left: 70%;
+  color: rgba(100, 100, 100, 0.7);
+  -webkit-animation-name: hourglassRoTaTe;
+          animation-name: hourglassRoTaTe;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 10.55);
+          animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 10.55);
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+@-webkit-keyframes hourglassRoTaTe {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes hourglassRoTaTe {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 /*Styling for Contact Section*/
@@ -1327,8 +1541,24 @@ other classes overiding the dark mode declarations due to specificity*/
 }
 
 .upto-dark {
+  color: white !important;
+  background-color: #141414 !important;
+}
+
+.quote-dark {
+  color: #f0f0f0;
+  background-color: #3c3c3c;
+}
+
+.learning-box-dark {
+  background-color: #282828;
+  -webkit-box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
   color: white;
-  background-color: #1e1e1e;
+}
+
+.hourglass-dark {
+  color: rgba(255, 255, 255, 0.856);
 }
 
 .contact-dark {
@@ -1459,6 +1689,7 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .about-me {
     padding-left: 0;
+    text-align: left;
   }
   #about-skills h2 {
     -ms-flex-item-align: center;
@@ -1520,6 +1751,16 @@ other classes overiding the dark mode declarations due to specificity*/
   .project-info {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  .quote {
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .learning-text {
+    font-weight: 400;
+    font-size: 0.7em;
   }
   #contact-card {
     width: 90%;
@@ -1652,6 +1893,7 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .about-me {
     padding-left: 0;
+    text-align: left;
   }
   #about-skills h2 {
     -ms-flex-item-align: center;
@@ -1709,6 +1951,55 @@ other classes overiding the dark mode declarations due to specificity*/
   .project-info {
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+  #uptosection h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .quote {
+    width: 80%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #learning-topics {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 150vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .fa-caret-down {
+    position: absolute;
+    top: 48%;
+    left: 105%;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  .learning-box {
+    width: unset;
+    height: 12.5%;
+  }
+  .smaller-learning {
+    width: 25%;
+    height: 8%;
+  }
+  .small-learning {
+    width: 45%;
+  }
+  .med-learning {
+    width: 70%;
+  }
+  .big-learning {
+    width: 90%;
+    height: 15%;
   }
   #contact-card {
     width: 90%;
@@ -1838,6 +2129,7 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .about-me {
     padding-left: 0;
+    text-align: left;
   }
   #about-skills h2 {
     -ms-flex-item-align: center;
@@ -1896,6 +2188,16 @@ other classes overiding the dark mode declarations due to specificity*/
     padding-top: 10px;
     padding-bottom: 10px;
   }
+  .quote {
+    width: 40%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .learning-text {
+    font-weight: 400;
+    font-size: 0.7em;
+  }
   #contact-card {
     width: 90%;
     margin: 1em;
@@ -1935,6 +2237,10 @@ other classes overiding the dark mode declarations due to specificity*/
   }
   .project-case {
     height: 40%;
+  }
+  .learning-text {
+    font-weight: 400;
+    font-size: 0.7em;
   }
 }
 
@@ -2043,10 +2349,12 @@ other classes overiding the dark mode declarations due to specificity*/
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    height: 130vh;
     width: 80%;
   }
   .about-me {
     padding-left: 0;
+    text-align: left;
   }
   #about-skills h2 {
     -ms-flex-item-align: center;
@@ -2075,7 +2383,7 @@ other classes overiding the dark mode declarations due to specificity*/
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 100vh;
+    height: 150vh;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
