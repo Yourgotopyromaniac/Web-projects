@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c69f58432.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <title>Akaani</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="div1">
+            <div id="div1-inner">
+                <div id="logo">
+                    <img src="assets/logo-svg.png" alt="page logo">
+                </div>
+                <div id="link-list">
+                    <ul>
+                        <li>
+                            <a class="sidebar-link">
+                                <i class="fa-solid fa-circle-user list-icon"></i>
+                                <span>Profile</span>
+                            </a>
+
+                        </li>
+                        <li>
+                            <a id="baskets-link" class="sidebar-link">
+                            <i class="fa-solid fa-basket-shopping list-icon"></i>
+                            <span>Baskets</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a  class="sidebar-link">
+                            <i class="fa-solid fa-clock-rotate-left list-icon"></i>
+                            <span>Order History</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="profile-info">
+                    <div id="initials">
+                        <span>LE</span>
+                    </div>
+                    <div id="user-info">
+                        <span class="bold-text">Laura Edson</span>
+                        <span class="mid-text">lauraedson@work.com</span>
+                    </div>
+                    <div id="exit-icon">
+                        <div id="exit-container">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="16" viewBox="0 0 21 16" fill="none">
+                                <path d="M0.290632 7.29222L7.29098 0.293383C7.91601 -0.331513 8.9994 0.105914 8.9994 1.0016C8.9994 3.21037 10.79 5.00094 12.9987 5.00094H14.6664C15.2205 5.00094 15.6664 5.4467 15.6664 6.00077V10.0001C15.6664 10.5542 15.2205 10.9999 14.6664 10.9999H12.9987C10.79 10.9999 8.9994 12.7905 8.9994 14.9993C8.9994 15.8908 7.92018 16.3324 7.29098 15.7075L0.290632 8.70866C-0.0968875 8.31705 -0.0968875 7.68383 0.290632 7.29222ZM12.9996 0.501682V2.16807C12.9996 2.44303 13.2246 2.66799 13.4996 2.66799H16.9998C17.7373 2.66799 18.3332 3.26372 18.3332 4.0011V11.9998C18.3332 12.7372 17.7373 13.3329 16.9998 13.3329H13.4996C13.2246 13.3329 12.9996 13.5579 12.9996 13.8328V15.4992C12.9996 15.7742 13.2246 15.9991 13.4996 15.9991H16.9998C19.2082 15.9991 21 14.2077 21 11.9998V4.0011C21 1.79314 19.2082 0.0017643 16.9998 0.0017643H13.4996C13.2246 0.0017643 12.9996 0.226728 12.9996 0.501682Z" fill="#726C6C"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </div>
+        <div class="div2">
+            <div id="welcome-container">
+                <div id="welcome-bar">
+                    <span>Good Evening, Laura!</span>
+                    <form>
+                        <div id="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+                                <path d="M7.07906 0C3.17779 0 0 3.17779 0 7.07906C0 10.9803 3.17779 14.1581 7.07906 14.1581C8.77556 14.1581 10.3336 13.5557 11.5546 12.5557L15.7813 16.7823C15.8466 16.8503 15.9247 16.9045 16.0111 16.9419C16.0976 16.9793 16.1906 16.999 16.2848 17C16.379 17.0009 16.4724 16.9831 16.5596 16.9475C16.6468 16.9119 16.726 16.8592 16.7926 16.7926C16.8592 16.726 16.9119 16.6468 16.9475 16.5596C16.9831 16.4724 17.0009 16.379 17 16.2848C16.999 16.1906 16.9793 16.0976 16.9419 16.0111C16.9045 15.9247 16.8503 15.8466 16.7823 15.7813L12.5557 11.5546C13.5557 10.3336 14.1581 8.77556 14.1581 7.07906C14.1581 3.17779 10.9803 0 7.07906 0ZM7.07906 1.41581C10.2152 1.41581 12.7423 3.94295 12.7423 7.07906C12.7423 10.2152 10.2152 12.7423 7.07906 12.7423C3.94295 12.7423 1.41581 10.2152 1.41581 7.07906C1.41581 3.94295 3.94295 1.41581 7.07906 1.41581Z" fill="#E9E9E9"/>
+                                </svg>
+                          <input id="input-box" type="text" placeholder="Search Basket">
+                        </div>
+                    </form>
+                </div>
+                <div id="order-info">
+                        <div id="order-info-container">
+                            
+                            <div class="box-exterior">
+                                <div class="order-info-box" id="order-transit">
+                                    <div id="basket" class="order-info-type">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="26" viewBox="0 0 28 26" fill="none">
+                                            <path d="M17.15 24.6458H10.85C5.08666 24.6458 2.63666 22.36 2.63666 17.0192V12.155C2.63666 11.7108 3.03332 11.3425 3.51166 11.3425C3.98999 11.3425 4.38666 11.7108 4.38666 12.155V17.0192C4.38666 21.45 6.07832 23.0208 10.85 23.0208H17.1383C21.91 23.0208 23.6017 21.45 23.6017 17.0192V12.155C23.6017 11.7108 23.9983 11.3425 24.4767 11.3425C24.955 11.3425 25.3517 11.7108 25.3517 12.155V17.0192C25.3633 22.36 22.9017 24.6458 17.15 24.6458Z" fill="#DA8539"/>
+                                            <path d="M14 13.8125C12.7167 13.8125 11.55 13.3467 10.7217 12.4908C9.89335 11.635 9.50836 10.5192 9.63669 9.32749L10.4184 2.09082C10.465 1.67916 10.8384 1.35416 11.2934 1.35416H16.7417C17.1967 1.35416 17.57 1.66832 17.6167 2.09082L18.3984 9.32749C18.5267 10.5192 18.1417 11.635 17.3134 12.4908C16.45 13.3467 15.2834 13.8125 14 13.8125ZM12.075 2.97916L11.375 9.48999C11.2934 10.2158 11.5267 10.8983 12.0167 11.3967C13.0084 12.415 14.9917 12.415 15.9834 11.3967C16.4734 10.8875 16.7067 10.205 16.625 9.48999L15.925 2.97916H12.075Z" fill="#DA8539"/>
+                                            <path d="M21.3617 13.8125C18.9934 13.8125 16.8817 12.0358 16.6367 9.84749L15.82 2.25332C15.7967 2.02582 15.8784 1.79832 16.0417 1.62499C16.205 1.45166 16.4384 1.35416 16.695 1.35416H20.2534C23.6834 1.35416 25.2817 2.68666 25.76 5.95832L26.0867 8.96999C26.2267 10.2483 25.8067 11.4617 24.9084 12.3825C24.01 13.3033 22.75 13.8125 21.3617 13.8125ZM17.6634 2.97916L18.3867 9.68499C18.5384 11.0392 19.8917 12.1875 21.3617 12.1875C22.2484 12.1875 23.0417 11.8733 23.6134 11.2992C24.1734 10.725 24.43 9.95582 24.3484 9.13249L24.0217 6.15332C23.66 3.70499 22.8084 2.97916 20.2534 2.97916H17.6634Z" fill="#DA8539"/>
+                                            <path d="M6.58002 13.8125C5.19169 13.8125 3.93169 13.3033 3.03336 12.3825C2.13502 11.4617 1.71503 10.2483 1.85503 8.96999L2.17002 5.99082C2.66002 2.68666 4.25836 1.35416 7.68836 1.35416H11.2467C11.4917 1.35416 11.725 1.45166 11.9 1.62499C12.075 1.79832 12.145 2.02582 12.1217 2.25332L11.305 9.84749C11.06 12.0358 8.94836 13.8125 6.58002 13.8125ZM7.68836 2.97916C5.13336 2.97916 4.28169 3.69416 3.90836 6.17499L3.59336 9.13249C3.50002 9.95582 3.76836 10.725 4.32836 11.2992C4.88836 11.8733 5.68169 12.1875 6.58002 12.1875C8.05002 12.1875 9.41502 11.0392 9.55502 9.68499L10.2784 2.97916H7.68836Z" fill="#DA8539"/>
+                                            <path d="M16.9166 24.6458H11.0833C10.605 24.6458 10.2083 24.2775 10.2083 23.8333V21.125C10.2083 18.85 11.55 17.6042 14 17.6042C16.45 17.6042 17.7916 18.85 17.7916 21.125V23.8333C17.7916 24.2775 17.395 24.6458 16.9166 24.6458ZM11.9583 23.0208H16.0416V21.125C16.0416 19.76 15.47 19.2292 14 19.2292C12.53 19.2292 11.9583 19.76 11.9583 21.125V23.0208Z" fill="#DA8539"/>
+                                        </svg>
+                                    </div>
+                                    <div class="order-info-text">
+                                        <span class="order-mid-text">Total Baskets</span>
+                                        <span class="order-bold-text">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-exterior">
+                                <div class="order-info-box" id="order-paid">
+                                    <div id="credit-card" class="order-info-type">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" viewBox="0 0 26 20" fill="none">
+                                            <path d="M1 7.75H25M3.18182 1H22.8182C24.0232 1 25 2.00736 25 3.25V16.75C25 17.9926 24.0232 19 22.8182 19H3.18182C1.97683 19 1 17.9926 1 16.75V3.25C1 2.00736 1.97683 1 3.18182 1Z" stroke="#56B1A0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                    <div  class="order-info-text">
+                                        <span class="order-mid-text">Total Paid</span>
+                                        <span class="order-bold-text">$0.00</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="box-exterior">
+                                <div class="order-info-box" id="order-completed">
+                                    <div id="gift" class="order-info-type">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="26" viewBox="0 0 25 26" fill="none">
+                                            <path d="M18.25 9.84307L6.75 3.63925M1.345 6.92644L12.5 12.9629L23.655 6.92644M12.5 25V12.951M24 17.7323V8.1696C23.9995 7.75036 23.8812 7.33861 23.657 6.97564C23.4327 6.61268 23.1103 6.31127 22.7222 6.10166L13.7778 1.32029C13.3893 1.11046 12.9486 1 12.5 1C12.0514 1 11.6107 1.11046 11.2222 1.32029L2.27778 6.10166C1.88967 6.31127 1.56731 6.61268 1.34303 6.97564C1.11876 7.33861 1.00046 7.75036 1 8.1696V17.7323C1.00046 18.1516 1.11876 18.5633 1.34303 18.9263C1.56731 19.2892 1.88967 19.5906 2.27778 19.8003L11.2222 24.5816C11.6107 24.7915 12.0514 24.9019 12.5 24.9019C12.9486 24.9019 13.3893 24.7915 13.7778 24.5816L22.7222 19.8003C23.1103 19.5906 23.4327 19.2892 23.657 18.9263C23.8812 18.5633 23.9995 18.1516 24 17.7323Z" stroke="#868DB5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="order-info-text">
+                                        <span class="order-mid-text">Completed Jobs</span>
+                                        <span class="order-bold-text">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-exterior">
+                                <div class="order-info-box" id="order-transit">
+                                    <div id="truck" class="order-info-type">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="22" viewBox="0 0 26 22" fill="none">
+                                            <path d="M17.3636 15.4444V1H1V15.4444H17.3636ZM17.3636 15.4444H25V9.88889L21.7273 6.55556H17.3636V15.4444ZM8.63636 18.2222C8.63636 19.7563 7.41532 21 5.90909 21C4.40286 21 3.18182 19.7563 3.18182 18.2222C3.18182 16.6881 4.40286 15.4444 5.90909 15.4444C7.41532 15.4444 8.63636 16.6881 8.63636 18.2222ZM22.8182 18.2222C22.8182 19.7563 21.5971 21 20.0909 21C18.5847 21 17.3636 19.7563 17.3636 18.2222C17.3636 16.6881 18.5847 15.4444 20.0909 15.4444C21.5971 15.4444 22.8182 16.6881 22.8182 18.2222Z" stroke="#5E7ED2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                    </div>
+                                    <div class="order-info-text">
+                                        <span class="order-mid-text">In Transit Jobs</span>
+                                        <span class="order-bold-text">0</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                </div>
+                <div id="section-info">
+                    <div id="interior-section-info">
+                        <span class="section-info-text">Baskets</span>
+                        <button class="btn-create">Create Basket</button>
+                    </div>
+                </div>
+                <div id="baskets-main-block">
+                    <div class="interior-container">
+                        <div id="top-block">
+                            <div id="link-container">
+                                <a class="mainblock-link">Paid</a>
+                                <a class="mainblock-link">Pending</a>
+                                <a class="mainblock-link">Completed</a>
+                            </div>
+                        </div>
+                        <div id="bottom-block">
+                            <div id="block-info">
+                                <div id="baskets" class="order-info-type">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="53" height="47" viewBox="0 0 53 47" fill="none">
+                                        <path d="M32.4625 44.5521H20.5375C9.62835 44.5521 4.99084 40.42 4.99084 30.7654V21.9725C4.99084 21.1696 5.74168 20.5038 6.64709 20.5038C7.55251 20.5038 8.30334 21.1696 8.30334 21.9725V30.7654C8.30334 38.775 11.5054 41.6146 20.5375 41.6146H32.4404C41.4725 41.6146 44.6746 38.775 44.6746 30.7654V21.9725C44.6746 21.1696 45.4254 20.5038 46.3308 20.5038C47.2363 20.5038 47.9871 21.1696 47.9871 21.9725V30.7654C48.0092 40.42 43.3496 44.5521 32.4625 44.5521Z" fill="#549A9A"/>
+                                        <path d="M26.5 24.9687C24.0708 24.9687 21.8625 24.1267 20.2946 22.5796C18.7267 21.0325 17.9979 19.0154 18.2408 16.8612L19.7204 3.77958C19.8088 3.03541 20.5154 2.44791 21.3767 2.44791H31.6896C32.5508 2.44791 33.2575 3.01583 33.3458 3.77958L34.8254 16.8612C35.0683 19.0154 34.3396 21.0325 32.7717 22.5796C31.1375 24.1267 28.9292 24.9687 26.5 24.9687ZM22.8563 5.38541L21.5313 17.155C21.3767 18.4671 21.8183 19.7008 22.7458 20.6017C24.6229 22.4425 28.3771 22.4425 30.2542 20.6017C31.1817 19.6812 31.6233 18.4475 31.4688 17.155L30.1438 5.38541H22.8563Z" fill="#549A9A"/>
+                                        <path d="M40.4346 24.9687C35.9516 24.9687 31.9546 21.7571 31.4908 17.8012L29.945 4.07333C29.9008 3.66208 30.0554 3.25083 30.3646 2.9375C30.6737 2.62416 31.1154 2.44791 31.6012 2.44791H38.3367C44.8292 2.44791 47.8546 4.85666 48.76 10.7708L49.3783 16.215C49.6433 18.5258 48.8483 20.7192 47.1479 22.3837C45.4475 24.0483 43.0625 24.9687 40.4346 24.9687ZM33.4342 5.38541L34.8033 17.5075C35.0904 19.9554 37.6521 22.0312 40.4346 22.0312C42.1129 22.0312 43.6146 21.4633 44.6967 20.4254C45.7567 19.3875 46.2425 17.9971 46.0879 16.5087L45.4696 11.1233C44.785 6.6975 43.1729 5.38541 38.3367 5.38541H33.4342Z" fill="#549A9A"/>
+                                        <path d="M12.455 24.9687C9.82707 24.9687 7.44207 24.0483 5.74165 22.3837C4.04124 20.7192 3.24624 18.5258 3.51124 16.215L4.10749 10.8296C5.03499 4.85666 8.0604 2.44791 14.5529 2.44791H21.2883C21.7521 2.44791 22.1937 2.62416 22.525 2.9375C22.8562 3.25083 22.9887 3.66208 22.9446 4.07333L21.3987 17.8012C20.935 21.7571 16.9379 24.9687 12.455 24.9687ZM14.5529 5.38541C9.71665 5.38541 8.10457 6.67791 7.3979 11.1625L6.80165 16.5087C6.62499 17.9971 7.1329 19.3875 8.1929 20.4254C9.2529 21.4633 10.7546 22.0312 12.455 22.0312C15.2375 22.0312 17.8212 19.9554 18.0862 17.5075L19.4554 5.38541H14.5529Z" fill="#549A9A"/>
+                                        <path d="M32.0208 44.5521H20.9792C20.0737 44.5521 19.3229 43.8862 19.3229 43.0833V38.1875C19.3229 34.075 21.8625 31.8229 26.5 31.8229C31.1375 31.8229 33.6771 34.075 33.6771 38.1875V43.0833C33.6771 43.8862 32.9262 44.5521 32.0208 44.5521ZM22.6354 41.6146H30.3646V38.1875C30.3646 35.72 29.2825 34.7604 26.5 34.7604C23.7175 34.7604 22.6354 35.72 22.6354 38.1875V41.6146Z" fill="#549A9A"/>
+                                    </svg>
+                                </div>
+                                <span class="block-info-text">No Paid Baskets, Yet!</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <div id="order-summary">
+                <div class="summary smry-invites">
+                    <div class="summary-info">
+                        <span class="smryText-bold">Invites</span>
+                        <span class="smryText-light">You have no invites</span>
+                    </div>
+                </div>
+                <div class="summary smry-payments">
+                    <div class="summary-info">
+                        <span class="smryText-bold">Recent Payments</span>
+                        <span class="smryText-light">No Payment has been made</span>
+                    </div>
+                </div>
+                <div class="summary smry-previous">
+                    <div class="summary-info">
+                        <span class="smryText-bold">Previous Orders</span>
+                        <span class="smryText-light">You have created no order</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right-slider" class="sidenav">
+            <div id="sidenav-top">
+                <div id="sn-top-first">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="19" height="15" viewBox="0 0 19 15" fill="none">
+                        <path d="M17.92 7.5H1M1 7.5L9.46 14M1 7.5L9.46 1" stroke="#483535" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <span class="cart-text">My Cart</span>
+                </div>
+
+
+                <div class="cart-btn cart-btn-slider" onclick="closeNav()" >
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </div>
+            </div>
+                <ul id="cart-items">
+                    <li>
+                        <div class="cart-item-container">
+                            <div class="cart-item-image">
+                                <img src="assets/coconut.png" alt="item image">
+                            </div>
+                            <div class="cart-item-details">
+                                <span class="cart-item-name">Okazi Leaves</span>
+                                <span class="cart-item-price">$30</span>
+                            </div>
+                            <div class="cart-item-qty">
+                                <label for="number" id="qty-label">
+                                    <select id="qty-number" class="cart-qty" name="amount">
+                                        <option class="qty-text" value="1kg">1 kg</option>
+                                        <option class="qty-text" value="2kg">2 kg</option>
+                                        <option class="qty-text" value="3kg">3 kg</option>
+                                        <option class="qty-text" value="4kg">4 kg</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="cart-item-brand">
+                                M
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cart-item-container">
+                            <div class="cart-item-image">
+                                <img src="assets/coconut.png" alt="item image">
+                            </div>
+                            <div class="cart-item-details">
+                                <span class="cart-item-name">Okazi Leaves</span>
+                                <span class="cart-item-price">$120</span>
+                            </div>
+                            <div class="cart-item-qty">
+                                <label for="number" id="qty-label">
+                                    <select id="qty-number" class="cart-qty" name="amount">
+                                        <option class="qty-text" value="1kg">1 kg</option>
+                                        <option class="qty-text" value="2kg">2 kg</option>
+                                        <option class="qty-text" value="3kg">3 kg</option>
+                                        <option class="qty-text" value="4kg">4 kg</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="cart-item-brand">
+                                R
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cart-item-container">
+                            <div class="cart-item-image">
+                                <img src="assets/coconut.png" alt="item image">
+                            </div>
+                            <div class="cart-item-details">
+                                <span class="cart-item-name">Rice Bean Lea...</span>
+                                <span class="cart-item-price">$50</span>
+                            </div>
+                            <div class="cart-item-qty">
+                                <label for="number" id="qty-label">
+                                    <select id="qty-number" class="cart-qty" name="amount">
+                                        <option class="qty-text" value="1kg">1 kg</option>
+                                        <option class="qty-text" value="2kg">2 kg</option>
+                                        <option class="qty-text" value="3kg">3 kg</option>
+                                        <option class="qty-text" value="4kg">4 kg</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="cart-item-brand">
+                                M
+                            </div>
+                            <div id="multiple-brand" class="cart-item-brand">
+                                P
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="cart-item-container">
+                            <div class="cart-item-image">
+                                <img src="assets/coconut.png" alt="item image">
+                            </div>
+                            <div class="cart-item-details">
+                                <span class="cart-item-name">Efo Stew Ingre...</span>
+                                <span class="cart-item-price">$45</span>
+                            </div>
+                            <div class="cart-item-qty">
+                                <label for="number" id="qty-label">
+                                    <select id="qty-number" class="cart-qty" name="amount">
+                                        <option class="qty-text" value="1kg">1 kg</option>
+                                        <option class="qty-text" value="2kg">2 kg</option>
+                                        <option class="qty-text" value="3kg">3 kg</option>
+                                        <option class="qty-text" value="4kg">4 kg</option>
+                                    </select>
+                                </label>
+                            </div>
+                            <div class="cart-item-brand">
+                                M
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+            <div id="payment-details">
+                <div id="total-price">
+                    <span class="mid-price">TOTAL</span>
+                    <span class="bold-price">$2650</span>
+                </div>
+                <button class="btn-create btn-done" onclick="closeNav()">DONE SHOPPING</button>
+            </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="cart-btn" onclick="openNav()" >
+        <i class="fa-solid fa-basket-shopping"></i>
+    </div>
+</body>
+</html>
