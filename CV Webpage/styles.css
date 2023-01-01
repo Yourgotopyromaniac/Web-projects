@@ -1,0 +1,104 @@
+body {
+  font-family: 'Sora', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fafafa;
+}
+
+#title {
+  text-transform: uppercase;
+  font-size: 40px;
+  color: black;
+  text-align: center;
+}
+
+#img-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#my-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+ul {
+  text-align: left;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+#my-info {
+  padding: 6em;
+  text-align: left;
+}
+
+#img-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.gridimg img {
+  width: 100%;
+  max-height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  #my-info p, a {
+    font-size: 14px;
+  }
+  #my-info {
+    padding: 3em;
+    text-align: left;
+  }
+  #img-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  ul {
+    font-size: 14px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
